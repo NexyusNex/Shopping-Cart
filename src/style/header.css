@@ -1,7 +1,4 @@
 .header {
-  height: 100svh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: grey;
-  background-blend-mode: multiply;
+  height: 80px;
+  border-bottom: 1px solid black;
 }
