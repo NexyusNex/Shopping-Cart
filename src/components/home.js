@@ -8,6 +8,9 @@ export default function Home() {
         className="content"
         style={{ backgroundImage: `url(${clarkImg})` }}
       ></div>
+      <div className="content-text">
+        <h1>Clothes for everyone</h1>
+      </div>
     </div>
   );
 }
