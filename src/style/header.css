@@ -1,5 +1,7 @@
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 2rem;
   height: 80px;
   border-bottom: 1px solid black;
@@ -7,4 +9,12 @@
 
 .header h1 {
   letter-spacing: 5px;
+}
+
+.header ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
 }
