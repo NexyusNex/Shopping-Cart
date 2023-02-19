@@ -1,4 +1,10 @@
 .header {
+  display: flex;
+  padding: 0 2rem;
   height: 80px;
   border-bottom: 1px solid black;
+}
+
+.header h1 {
+  letter-spacing: 5px;
 }
