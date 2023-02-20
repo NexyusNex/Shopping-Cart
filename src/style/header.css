@@ -28,3 +28,13 @@
 .header img {
   height: 2.5rem;
 }
+
+.header a {
+  text-decoration: none;
+  color: black;
+  transition: transform 300ms ease;
+}
+
+.header a:hover {
+  transform: scale(1.2);
+}
