@@ -1,0 +1,20 @@
+.categories {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.men-button,
+.women-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.men-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 1.4rem;
+}
