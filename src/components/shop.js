@@ -1,10 +1,15 @@
 import Header from "./header";
+import "../style/shop.css";
 
 export default function Shop() {
   return (
     <div className="Shop">
       <Header></Header>
-      <p>alasdpasdpas</p>
+      <div className="categories">
+        <button className="men-button">Men</button>
+        <button className="women-button">Women</button>
+      </div>
+      <div className="item-list"></div>
     </div>
   );
 }
