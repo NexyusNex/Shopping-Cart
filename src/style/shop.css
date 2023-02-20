@@ -18,3 +18,7 @@
   color: white;
   font-size: 1.4rem;
 }
+
+.item-list {
+  display: grid;
+}
