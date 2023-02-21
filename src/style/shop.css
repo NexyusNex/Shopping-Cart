@@ -20,17 +20,35 @@
 }
 
 .item-container {
-  outline: 1px solid black;
   margin-bottom: 100px;
   padding: 0 15%;
 }
 
 .item-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 24px;
 }
 
 .item {
-  height: 250px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 12px;
+}
+
+.item img {
+  height: 80%;
+  border-radius: 12px;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
