@@ -3,7 +3,7 @@ import "../style/shop.css";
 import { useState } from "react";
 
 export default function Shop() {
-  const [itemList, setitemList] = useState(
+  const [itemList, setitemList] = useState([
     {
       id: 0,
       name: "Black Front Sweater",
@@ -13,8 +13,8 @@ export default function Shop() {
       id: 1,
       name: "Black T-Shirt",
       cost: "22.99$",
-    }
-  );
+    },
+  ]);
 
   return (
     <div className="Shop">
@@ -24,7 +24,15 @@ export default function Shop() {
         <button className="women-button">Women</button>
       </div>
       <div className="item-container">
-        <div className="item-list"></div>
+        <div className="item-list">
+          {itemList.map((item) => {
+            return (
+              <div className="item" key={item.id}>
+                {item.name}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
