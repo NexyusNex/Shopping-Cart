@@ -19,6 +19,13 @@
   font-size: 1.4rem;
 }
 
+.item-container {
+  height: 80svh;
+  outline: 1px solid black;
+  margin-bottom: 100px;
+  padding: 0 20%;
+}
+
 .item-list {
   display: grid;
 }
