@@ -20,12 +20,17 @@
 }
 
 .item-container {
-  height: 80svh;
   outline: 1px solid black;
   margin-bottom: 100px;
-  padding: 0 20%;
+  padding: 0 15%;
 }
 
 .item-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.item {
+  height: 250px;
+  border: 1px solid black;
 }
