@@ -9,7 +9,9 @@ export default function Shop() {
         <button className="men-button">Men</button>
         <button className="women-button">Women</button>
       </div>
-      <div className="item-list"></div>
+      <div className="item-container">
+        <div className="item-list"></div>
+      </div>
     </div>
   );
 }
