@@ -2,8 +2,8 @@ import Header from "./header";
 import "../style/shop.css";
 import { useState } from "react";
 import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
-import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.jpg";
-import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.jpg";
+import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
+import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 
 export default function Shop() {
   const [itemList, setitemList] = useState([
