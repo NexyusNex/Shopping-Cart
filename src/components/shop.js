@@ -43,6 +43,7 @@ export default function Shop() {
                 <div className="item-description">
                   <p>{item.name}</p> <p>{item.cost}</p>
                 </div>
+                <button className="item-btn">Add to cart</button>
               </div>
             );
           })}
