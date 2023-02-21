@@ -1,6 +1,9 @@
 import Header from "./header";
 import "../style/shop.css";
 import { useState } from "react";
+import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
+import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.jpg";
+import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.jpg";
 
 export default function Shop() {
   const [itemList, setitemList] = useState([
@@ -8,16 +11,19 @@ export default function Shop() {
       id: 0,
       name: "Black Front Sweater",
       cost: "59.99$",
+      img: blackFrontSweater,
     },
     {
       id: 1,
       name: "Black T-Shirt",
       cost: "22.99$",
+      img: blackTshirt,
     },
     {
       id: 2,
       name: "White T-Shirt",
       cost: "24.99$",
+      img: whiteTshirt,
     },
   ]);
 
@@ -33,7 +39,10 @@ export default function Shop() {
           {itemList.map((item) => {
             return (
               <div className="item" key={item.id}>
-                {item.name}
+                <img src={item.img} alt={item.name}></img>
+                <div className="item-description">
+                  <p>{item.name}</p> <p>{item.cost}</p>
+                </div>
               </div>
             );
           })}
