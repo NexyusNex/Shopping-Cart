@@ -14,6 +14,11 @@ export default function Shop() {
       name: "Black T-Shirt",
       cost: "22.99$",
     },
+    {
+      id: 2,
+      name: "White T-Shirt",
+      cost: "24.99$",
+    },
   ]);
 
   return (
