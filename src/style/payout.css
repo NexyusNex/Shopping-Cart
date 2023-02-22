@@ -1,0 +1,20 @@
+.cart-container {
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buy-item {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.buy-item img {
+  height: 120px;
+}
