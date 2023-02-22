@@ -1,12 +1,11 @@
 import "../style/header.css";
 import shoppingCart from "../images/shopping-cart.svg";
 import { Link } from "react-router-dom";
-import cart from "./cart";
 import { useEffect } from "react";
 
-export default function Header() {
+export default function Header(props) {
   function showCart() {
-    console.log(cart);
+    console.log(props.cart);
   }
 
   return (
@@ -23,7 +22,7 @@ export default function Header() {
           <li>About</li>
         </ul>
         <img src={shoppingCart} alt="shopping-cart" onClick={showCart}></img>
-        <div className="item-num">{cart.length}</div>
+        <div className="item-num">{props.cart.length}</div>
       </div>
     </div>
   );
