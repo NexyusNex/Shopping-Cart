@@ -20,7 +20,10 @@ export default function Header(props) {
           </Link>
           <li>About</li>
         </ul>
-        <img src={shoppingCart} alt="shopping-cart" onClick={showCart}></img>
+        <Link to="/Payout">
+          <img src={shoppingCart} alt="shopping-cart" onClick={showCart}></img>
+        </Link>
+
         <div className="item-num">{props.cart.length}</div>
       </div>
     </div>
