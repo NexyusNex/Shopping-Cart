@@ -29,6 +29,14 @@ export default function Payout(props) {
             <p>Sub total</p>
             <p>${total}</p>
           </div>
+          <div className="text-seperation">
+            <p>Shipping</p>
+            <p>FREE</p>
+          </div>
+          <div className="text-seperation total">
+            <p>Total(VAT incl.)</p>
+            <p>{total}</p>
+          </div>
           <button>ORDER</button>
         </div>
       </div>
