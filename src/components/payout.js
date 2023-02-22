@@ -27,7 +27,7 @@ export default function Payout(props) {
           <h3>Total</h3>
           <div className="text-seperation">
             <p>Sub total</p>
-            <p>${total}</p>
+            <p>${total.toFixed(2)}</p>
           </div>
           <div className="text-seperation">
             <p>Shipping</p>
@@ -35,7 +35,7 @@ export default function Payout(props) {
           </div>
           <div className="text-seperation total">
             <p>Total(VAT incl.)</p>
-            <p>${total}</p>
+            <p>${total.toFixed(2)}</p>
           </div>
           <button>ORDER</button>
         </div>
