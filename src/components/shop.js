@@ -30,7 +30,7 @@ export default function Shop() {
 
   function addToCart(e) {
     const id = e.target.id;
-    setCart((cart) => [...cart, id]);
+    setCart((cart) => [...cart, itemList[id]]);
   }
 
   return (
