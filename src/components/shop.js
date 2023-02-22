@@ -6,6 +6,7 @@ import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 
 export default function Shop() {
+  const [cart, setCart] = useState([]);
   const [itemList, setitemList] = useState([
     {
       id: 0,
@@ -27,9 +28,14 @@ export default function Shop() {
     },
   ]);
 
+  function addToCart(e) {
+    const id = e.target.id;
+    setCart((cart) => [...cart, id]);
+  }
+
   return (
     <div className="Shop">
-      <Header></Header>
+      <Header cart={cart}></Header>
       <div className="categories">
         <button className="men-button">Men</button>
         <button className="women-button">Women</button>
@@ -43,7 +49,9 @@ export default function Shop() {
                 <div className="item-description">
                   <p>{item.name}</p> <p>{item.cost}</p>
                 </div>
-                <button className="item-btn">Add to cart</button>
+                <button className="item-btn" id={item.id} onClick={addToCart}>
+                  Add to cart
+                </button>
               </div>
             );
           })}
