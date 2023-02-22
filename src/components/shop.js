@@ -11,24 +11,39 @@ export default function Shop(props) {
       name: "Black Front Sweater",
       cost: 59.99,
       img: blackFrontSweater,
+      count: 1,
     },
     {
       id: 1,
       name: "Black T-Shirt",
       cost: 22.99,
       img: blackTshirt,
+      count: 1,
     },
     {
       id: 2,
       name: "White T-Shirt",
       cost: 24.99,
       img: whiteTshirt,
+      count: 1,
     },
   ];
 
   function addToCart(e) {
     const id = e.target.id;
-    props.setCart((cart) => [...cart, itemList[id]]);
+    let clone = [...props.cart];
+    console.log(clone);
+    let bool = false;
+
+    clone.map((item) => {
+      if (item.name === itemList[id].name) {
+        item.count += 1;
+        props.setCart(clone);
+        bool = true;
+      }
+    });
+
+    if (!bool) props.setCart((cart) => [...cart, itemList[id]]);
   }
 
   return (
