@@ -9,19 +9,19 @@ export default function Shop(props) {
     {
       id: 0,
       name: "Black Front Sweater",
-      cost: "59.99$",
+      cost: 59.99,
       img: blackFrontSweater,
     },
     {
       id: 1,
       name: "Black T-Shirt",
-      cost: "22.99$",
+      cost: 22.99,
       img: blackTshirt,
     },
     {
       id: 2,
       name: "White T-Shirt",
-      cost: "24.99$",
+      cost: 24.99,
       img: whiteTshirt,
     },
   ];
@@ -45,7 +45,7 @@ export default function Shop(props) {
               <div className="item" key={item.id}>
                 <img src={item.img} alt={item.name}></img>
                 <div className="item-description">
-                  <p>{item.name}</p> <p>{item.cost}</p>
+                  <p>{item.name}</p> <p>${item.cost}</p>
                 </div>
                 <button className="item-btn" id={item.id} onClick={addToCart}>
                   Add to cart
