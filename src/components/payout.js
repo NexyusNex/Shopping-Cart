@@ -6,7 +6,7 @@ import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 
 export default function Payout(props) {
   const total = props.cart.reduce(
-    (total, item) => (total = total + item.cost),
+    (total, item) => (total = total + item.cost * item.count),
     0
   );
   return (
@@ -19,7 +19,7 @@ export default function Payout(props) {
           return (
             <div className="buy-item" key={item.id}>
               <img src={item.img} alt={item.name}></img>
-              {item.name}, ${item.cost}
+              {item.name}, ${item.cost}, Count:{item.count}
             </div>
           );
         })}
@@ -35,7 +35,7 @@ export default function Payout(props) {
           </div>
           <div className="text-seperation total">
             <p>Total(VAT incl.)</p>
-            <p>{total}</p>
+            <p>${total}</p>
           </div>
           <button>ORDER</button>
         </div>
