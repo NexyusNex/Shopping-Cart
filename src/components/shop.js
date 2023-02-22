@@ -1,12 +1,13 @@
 import Header from "./header";
 import "../style/shop.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
 import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
+import cart from "./cart";
 
 export default function Shop() {
-  const [cart, setCart] = useState([]);
+  const [state, setState] = useState([]);
   const [itemList, setitemList] = useState([
     {
       id: 0,
@@ -30,12 +31,13 @@ export default function Shop() {
 
   function addToCart(e) {
     const id = e.target.id;
-    setCart((cart) => [...cart, itemList[id]]);
+    cart.push(itemList[id]);
+    setState([]);
   }
 
   return (
     <div className="Shop">
-      <Header cart={cart}></Header>
+      <Header></Header>
       <div className="categories">
         <button className="men-button">Men</button>
         <button className="women-button">Women</button>
