@@ -5,6 +5,10 @@ import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 
 export default function Payout(props) {
+  const total = props.cart.reduce(
+    (total, item) => (total = total + item.cost),
+    0
+  );
   return (
     <div className="Payout">
       <Header cart={props.cart}></Header>
@@ -19,6 +23,14 @@ export default function Payout(props) {
             </div>
           );
         })}
+        <div className="confirm-purchase">
+          <h3>Total</h3>
+          <div className="text-seperation">
+            <p>Sub total</p>
+            <p>${total}</p>
+          </div>
+          <button>ORDER</button>
+        </div>
       </div>
     </div>
   );
