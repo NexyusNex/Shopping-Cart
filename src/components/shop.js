@@ -1,12 +1,11 @@
 import Header from "./header";
 import "../style/shop.css";
-import { useState } from "react";
 import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
 import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 
 export default function Shop(props) {
-  const [itemList, setitemList] = useState([
+  const itemList = [
     {
       id: 0,
       name: "Black Front Sweater",
@@ -25,7 +24,7 @@ export default function Shop(props) {
       cost: "24.99$",
       img: whiteTshirt,
     },
-  ]);
+  ];
 
   function addToCart(e) {
     const id = e.target.id;
