@@ -5,16 +5,35 @@
   flex-direction: column;
 }
 
-.buy-item {
+.buy-item,
+.confirm-purchase {
   display: flex;
-  align-items: center;
   width: 400px;
-  height: 150px;
   border: 1px solid gray;
   border-radius: 12px;
   margin-bottom: 16px;
 }
 
+.buy-item {
+  align-items: center;
+  height: 150px;
+}
+
 .buy-item img {
   height: 120px;
+}
+
+.confirm-purchase {
+  box-sizing: border-box;
+  padding: 16px;
+  flex-direction: column;
+}
+
+.confirm-purchase p {
+  margin: 0;
+}
+
+.text-seperation {
+  display: flex;
+  justify-content: space-between;
 }
