@@ -13,7 +13,10 @@ export default function Payout(props) {
     <div className="Payout">
       <Header cart={props.cart}></Header>
       <div className="cart-container">
-        <h2>My cart({props.cart.length})</h2>
+        <h2>
+          My cart(
+          {props.cart.reduce((total, item) => (total = total + item.count), 0)})
+        </h2>
         <div className="cart-item-container"></div>
         {props.cart.map((item) => {
           return (
