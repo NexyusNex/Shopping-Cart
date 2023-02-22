@@ -9,7 +9,7 @@
 .confirm-purchase {
   display: flex;
   width: 400px;
-  border: 1px solid gray;
+  border: 1px solid rgb(196, 196, 196);
   border-radius: 12px;
   margin-bottom: 16px;
 }
@@ -17,6 +17,12 @@
 .buy-item {
   align-items: center;
   height: 150px;
+  transition: transform 500ms ease;
+}
+
+.buy-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.486);
 }
 
 .buy-item img {
