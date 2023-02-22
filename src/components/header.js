@@ -1,17 +1,12 @@
 import "../style/header.css";
 import shoppingCart from "../images/shopping-cart.svg";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import cart from "./cart";
+import { useEffect } from "react";
 
-export default function Header(props) {
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    setCart((cart) => [props.cart]);
-  }, [props]);
-
+export default function Header() {
   function showCart() {
-    console.log(props.cart);
+    console.log(cart);
   }
 
   return (
