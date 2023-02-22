@@ -29,11 +29,21 @@
   flex-direction: column;
 }
 
+.confirm-purchase h3 {
+  margin: 12px 0;
+}
+
 .confirm-purchase p {
-  margin: 0;
+  margin: 6px 0;
 }
 
 .text-seperation {
   display: flex;
   justify-content: space-between;
+}
+
+.total {
+  padding: 12px 0;
+  border-top: 1px solid gray;
+  font-weight: bold;
 }
