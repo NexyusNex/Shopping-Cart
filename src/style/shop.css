@@ -53,7 +53,7 @@
   gap: 8px;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 12px;
-  transition: box-shadow 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
   animation-name: onLoad;
   animation-duration: 700ms;
 }
