@@ -34,7 +34,7 @@ export default function Shop(props) {
     let clone = [...props.cart];
     let bool = false;
 
-    clone.map((item) => {
+    clone.forEach((item) => {
       if (item.name === itemList[id].name) {
         item.count += 1;
         props.setCart(clone);
