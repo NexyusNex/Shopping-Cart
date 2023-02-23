@@ -32,7 +32,6 @@ export default function Shop(props) {
   function addToCart(e) {
     const id = e.target.id;
     let clone = [...props.cart];
-    console.log(clone);
     let bool = false;
 
     clone.map((item) => {
