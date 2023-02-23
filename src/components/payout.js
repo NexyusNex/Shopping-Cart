@@ -15,6 +15,22 @@ export default function Payout(props) {
     props.setCart(clone);
   }
 
+  function increment(e) {
+    let clone = [...props.cart];
+    clone.forEach((item) => {
+      if (item.id == e.target.id) item.count++;
+    });
+    props.setCart(clone);
+  }
+
+  function decrement(e) {
+    let clone = [...props.cart];
+    clone.forEach((item) => {
+      if (item.id == e.target.id) item.count--;
+    });
+    props.setCart(clone);
+  }
+
   return (
     <div className="Payout">
       <Header cart={props.cart}></Header>
@@ -33,9 +49,13 @@ export default function Payout(props) {
               </div>
               <div className="buy-item-input">
                 <div className="count-box">
-                  <button className="count">-</button>
+                  <button className="count" id={item.id} onClick={decrement}>
+                    -
+                  </button>
                   <div>{item.count}</div>
-                  <button className="count">+</button>
+                  <button className="count" id={item.id} onClick={increment}>
+                    +
+                  </button>
                 </div>
                 <button className="delete" id={item.id} onClick={deleteItem}>
                   Delete
