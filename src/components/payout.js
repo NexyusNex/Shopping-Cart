@@ -11,14 +11,16 @@ export default function Payout(props) {
   );
 
   function deleteItem(e) {
-    let clone = [...props.cart].filter((item) => item.id != e.target.id);
+    let clone = [...props.cart].filter(
+      (item) => item.id !== Number(e.target.id)
+    );
     props.setCart(clone);
   }
 
   function increment(e) {
     let clone = [...props.cart];
     clone.forEach((item) => {
-      if (item.id == e.target.id) item.count++;
+      if (item.id === Number(e.target.id)) item.count++;
     });
     props.setCart(clone);
   }
@@ -26,7 +28,7 @@ export default function Payout(props) {
   function decrement(e) {
     let clone = [...props.cart];
     clone.forEach((item) => {
-      if (item.id == e.target.id) item.count--;
+      if (item.id === Number(e.target.id)) item.count--;
     });
     props.setCart(clone);
   }
