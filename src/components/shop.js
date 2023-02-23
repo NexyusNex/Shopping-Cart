@@ -3,6 +3,7 @@ import "../style/shop.css";
 import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
 import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
+import Footer from "./footer";
 
 export default function Shop(props) {
   const itemList = [
@@ -69,6 +70,7 @@ export default function Shop(props) {
           })}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
