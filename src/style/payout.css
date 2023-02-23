@@ -19,6 +19,7 @@
 .buy-item,
 .confirm-purchase {
   display: flex;
+  box-sizing: border-box;
   width: 400px;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 12px;
@@ -28,6 +29,8 @@
 }
 
 .buy-item {
+  justify-content: space-between;
+  padding: 0 12px;
   align-items: center;
   height: 150px;
   transition: transform 500ms ease;
@@ -38,12 +41,44 @@
   box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.486);
 }
 
+.buy-item-text p {
+  display: block;
+  margin: 8px 0;
+}
+
+.buy-item-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete {
+  width: 80px;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  color: #632b2b;
+  background-color: #ff8282;
+  transition: 0.3s ease;
+}
+
+.delete:hover {
+  outline: 2px solid #632b2b;
+  font-weight: bold;
+  box-shadow: 0px 0px 8px #632b2b;
+  cursor: pointer;
+}
+
+.delete:active {
+  background-color: #d36c6c;
+}
+
 .buy-item img {
   height: 120px;
+  width: 150px;
 }
 
 .confirm-purchase {
-  box-sizing: border-box;
   padding: 16px;
   flex-direction: column;
 }
