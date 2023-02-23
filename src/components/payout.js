@@ -22,7 +22,13 @@ export default function Payout(props) {
           return (
             <div className="buy-item" key={item.id}>
               <img src={item.img} alt={item.name}></img>
-              {item.name}, ${item.cost}, Count:{item.count}
+              <div className="buy-item-text">
+                <p>{item.name}</p> <p>${item.cost}</p>
+              </div>
+              <div className="buy-item-input">
+                <div>{item.count}</div>
+                <button className="delete">Delete</button>
+              </div>
             </div>
           );
         })}
