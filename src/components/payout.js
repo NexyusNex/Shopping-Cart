@@ -32,7 +32,11 @@ export default function Payout(props) {
                 <p>{item.name}</p> <p>${item.cost}</p>
               </div>
               <div className="buy-item-input">
-                <div>{item.count}</div>
+                <div className="count-box">
+                  <button className="count">-</button>
+                  <div>{item.count}</div>
+                  <button className="count">+</button>
+                </div>
                 <button className="delete" id={item.id} onClick={deleteItem}>
                   Delete
                 </button>
