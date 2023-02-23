@@ -9,6 +9,12 @@ export default function Payout(props) {
     (total, item) => (total = total + item.cost * item.count),
     0
   );
+
+  function deleteItem(e) {
+    let clone = [...props.cart].filter((item) => item.id != e.target.id);
+    props.setCart(clone);
+  }
+
   return (
     <div className="Payout">
       <Header cart={props.cart}></Header>
@@ -27,7 +33,9 @@ export default function Payout(props) {
               </div>
               <div className="buy-item-input">
                 <div>{item.count}</div>
-                <button className="delete">Delete</button>
+                <button className="delete" id={item.id} onClick={deleteItem}>
+                  Delete
+                </button>
               </div>
             </div>
           );
