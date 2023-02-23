@@ -3,6 +3,7 @@ import "../style/payout.css";
 import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
 import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
+import Footer from "./footer";
 
 export default function Payout(props) {
   const total = props.cart.reduce(
@@ -83,6 +84,7 @@ export default function Payout(props) {
           <button>ORDER</button>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
