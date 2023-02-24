@@ -29,7 +29,7 @@ export default function Payout(props) {
   function decrement(e) {
     let clone = [...props.cart];
     clone.forEach((item) => {
-      if (item.id === Number(e.target.id)) item.count--;
+      if (item.id === Number(e.target.id) && item.count !== 1) item.count--;
     });
     props.setCart(clone);
   }
