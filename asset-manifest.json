@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.56d70320.css",
-    "main.js": "/shopping-cart/static/js/main.8ccc84dc.js",
+    "main.js": "/shopping-cart/static/js/main.9f0904ab.js",
     "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.a7b53c85edeb8966656a.jpg",
     "static/media/black-front-sweater.jpg": "/shopping-cart/static/media/black-front-sweater.ebb32737eea45362f9f6.jpg",
     "static/media/Isolated_white_t-shirt_front.png": "/shopping-cart/static/media/Isolated_white_t-shirt_front.ad6acd57b31de3d839b9.png",
@@ -10,10 +10,10 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
     "main.56d70320.css.map": "/shopping-cart/static/css/main.56d70320.css.map",
-    "main.8ccc84dc.js.map": "/shopping-cart/static/js/main.8ccc84dc.js.map"
+    "main.9f0904ab.js.map": "/shopping-cart/static/js/main.9f0904ab.js.map"
   },
   "entrypoints": [
     "static/css/main.56d70320.css",
-    "static/js/main.8ccc84dc.js"
+    "static/js/main.9f0904ab.js"
   ]
 }
