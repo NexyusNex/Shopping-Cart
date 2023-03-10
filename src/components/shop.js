@@ -21,7 +21,6 @@ export default function Shop(props) {
         ...doc.data(),
         id: doc.id,
       }));
-      console.log(filteredData);
       setItemList(filteredData);
     } catch (error) {
       console.log(error);
@@ -54,7 +53,6 @@ export default function Shop(props) {
       <div className="item-container">
         <div className="item-list">
           {itemList.map((item) => {
-            console.log(item.img);
             return (
               <div className="item" key={item.id}>
                 <img src={clothesImages(`./${item.img}`)} alt={item.name}></img>
