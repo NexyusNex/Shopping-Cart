@@ -1,8 +1,5 @@
 import Header from "./header";
 import "../style/shop.css";
-import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
-import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
-import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 import Footer from "./footer";
 import { db } from "../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
@@ -12,29 +9,6 @@ export default function Shop(props) {
   const clothesCollectionRef = collection(db, "Clothes");
   const [itemList, setItemList] = useState([]);
   const clothesImages = require.context("../images/clothes", true);
-  let itemL = [
-    {
-      id: 0,
-      name: "Black Front Sweater",
-      cost: 59.99,
-      img: blackFrontSweater,
-      count: 1,
-    },
-    {
-      id: 1,
-      name: "Black T-Shirt",
-      cost: 22.99,
-      img: blackTshirt,
-      count: 1,
-    },
-    {
-      id: 2,
-      name: "White T-Shirt",
-      cost: 24.99,
-      img: whiteTshirt,
-      count: 1,
-    },
-  ];
 
   useEffect(() => {
     GetClothesList();
