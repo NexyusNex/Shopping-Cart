@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 export default function Shop(props) {
   const clothesCollectionRef = collection(db, "Clothes");
   const [itemList, setItemList] = useState([]);
+  const clothesImages = require.context("../images/clothes", true);
   let itemL = [
     {
       id: 0,
@@ -34,8 +35,6 @@ export default function Shop(props) {
       count: 1,
     },
   ];
-
-  let lala = "../images/clothes/black-front-sweater.jpg";
 
   useEffect(() => {
     GetClothesList();
@@ -78,18 +77,13 @@ export default function Shop(props) {
         <button className="men-button">Men</button>
         <button className="women-button">Women</button>
       </div>
-      <img
-        style={{ height: "100px" }}
-        src={require(`${lala}`)}
-        alt="asdasd"
-      ></img>
       <div className="item-container">
         <div className="item-list">
           {itemList.map((item) => {
             console.log(item.img);
             return (
               <div className="item" key={item.id}>
-                <img src={item.img} alt={item.name}></img>
+                <img src={clothesImages(`./${item.img}`)} alt={item.name}></img>
                 <div className="item-description">
                   <p>{item.name}</p> <p>${item.cost}</p>
                 </div>
