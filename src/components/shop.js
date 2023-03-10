@@ -5,10 +5,11 @@ import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 import Footer from "./footer";
 import { db } from "../config/firebase";
-import { collection } from "firebase/firestore";
+import { collection, getDoc, getDocs } from "firebase/firestore";
+import { useEffect } from "react";
 
 export default function Shop(props) {
-  const clotherCollectionRef = collection(db, "Clothes");
+  const clothesCollectionRef = collection(db, "Clothes");
 
   const itemList = [
     {
@@ -33,6 +34,23 @@ export default function Shop(props) {
       count: 1,
     },
   ];
+
+  useEffect(() => {
+    GetClothesList();
+  });
+
+  const GetClothesList = async () => {
+    try {
+      const data = await getDocs(clothesCollectionRef);
+      const filteredData = data.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      console.log(filteredData);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   function addToCart(e) {
     const id = e.target.id;
