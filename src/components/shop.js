@@ -19,7 +19,7 @@ export default function Shop(props) {
       const data = await getDocs(clothesCollectionRef);
       const filteredData = data.docs.map((doc) => ({
         ...doc.data(),
-        id: doc.id,
+        id: Number(doc.id),
       }));
       setItemList(filteredData);
     } catch (error) {
