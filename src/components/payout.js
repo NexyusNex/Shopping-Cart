@@ -1,11 +1,10 @@
 import Header from "./header";
 import "../style/payout.css";
-import blackFrontSweater from "../images/clothes/black-front-sweater.jpg";
-import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
-import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 import Footer from "./footer";
 
 export default function Payout(props) {
+  const clothesImages = require.context("../images/clothes", true);
+
   const total = props.cart.reduce(
     (total, item) => (total = total + item.cost * item.count),
     0
@@ -19,6 +18,7 @@ export default function Payout(props) {
   }
 
   function increment(e) {
+    console.log(props.cart);
     let clone = [...props.cart];
     clone.forEach((item) => {
       if (item.id === Number(e.target.id)) item.count++;
@@ -46,7 +46,7 @@ export default function Payout(props) {
         {props.cart.map((item) => {
           return (
             <div className="buy-item" key={item.id}>
-              <img src={item.img} alt={item.name}></img>
+              <img src={clothesImages(`./${item.img}`)} alt={item.name}></img>
               <div className="buy-item-text">
                 <p>{item.name}</p> <p>${item.cost}</p>
               </div>
