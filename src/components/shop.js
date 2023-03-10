@@ -5,13 +5,13 @@ import blackTshirt from "../images/clothes/Isolated_black_t-shirt_front.png";
 import whiteTshirt from "../images/clothes/Isolated_white_t-shirt_front.png";
 import Footer from "./footer";
 import { db } from "../config/firebase";
-import { collection, getDoc, getDocs } from "firebase/firestore";
-import { useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { useEffect, useState } from "react";
 
 export default function Shop(props) {
   const clothesCollectionRef = collection(db, "Clothes");
-
-  const itemList = [
+  const [itemList, setItemList] = useState([]);
+  let itemL = [
     {
       id: 0,
       name: "Black Front Sweater",
@@ -35,9 +35,11 @@ export default function Shop(props) {
     },
   ];
 
+  let lala = "../images/clothes/black-front-sweater.jpg";
+
   useEffect(() => {
     GetClothesList();
-  });
+  }, []);
 
   const GetClothesList = async () => {
     try {
@@ -47,6 +49,7 @@ export default function Shop(props) {
         id: doc.id,
       }));
       console.log(filteredData);
+      setItemList(filteredData);
     } catch (error) {
       console.log(error);
     }
@@ -75,9 +78,15 @@ export default function Shop(props) {
         <button className="men-button">Men</button>
         <button className="women-button">Women</button>
       </div>
+      <img
+        style={{ height: "100px" }}
+        src={require(`${lala}`)}
+        alt="asdasd"
+      ></img>
       <div className="item-container">
         <div className="item-list">
           {itemList.map((item) => {
+            console.log(item.img);
             return (
               <div className="item" key={item.id}>
                 <img src={item.img} alt={item.name}></img>
