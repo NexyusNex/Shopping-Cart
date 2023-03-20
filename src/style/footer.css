@@ -96,3 +96,18 @@
     padding-top: 12px;
   }
 }
+
+@media screen and (width<=850px) {
+  .Footer {
+    gap: 16px;
+  }
+  .subscribe-linkbox h3 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (width<=655px) {
+  .subscribe-linkbox h3 {
+    margin-top: 24px;
+  }
+}
