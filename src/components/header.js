@@ -16,12 +16,17 @@ export default function Header(props) {
           </Link>
           <li>About</li>
         </ul>
-        <Link to="/Payout">
-          <img src={shoppingCart} alt="shopping-cart"></img>
-        </Link>
+        <div className="cart">
+          <Link to="/Payout">
+            <img src={shoppingCart} alt="shopping-cart"></img>
+          </Link>
 
-        <div className="item-num">
-          {props.cart.reduce((total, item) => (total = total + item.count), 0)}
+          <div className="item-num">
+            {props.cart.reduce(
+              (total, item) => (total = total + item.count),
+              0
+            )}
+          </div>
         </div>
       </div>
     </div>
