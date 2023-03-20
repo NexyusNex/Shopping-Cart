@@ -115,6 +115,7 @@
 .confirm-purchase {
   padding: 16px;
   flex-direction: column;
+  transition: width 200ms ease-in-out;
 }
 
 .confirm-purchase h3 {
@@ -155,4 +156,24 @@
   padding: 12px 0;
   border-top: 1px solid gray;
   font-weight: bold;
+}
+
+@media screen and (width <= 450px) {
+  .confirm-purchase,
+  .buy-item {
+    width: 350px;
+  }
+}
+
+@media screen and (width <= 380px) {
+  .confirm-purchase,
+  .buy-item {
+    width: 300px;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 8px;
+  }
+  .buy-item-text {
+    text-align: center;
+  }
 }
