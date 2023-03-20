@@ -85,3 +85,13 @@
   gap: 8px;
   color: #696969;
 }
+
+@media screen and (width<=600px) {
+  .Footer {
+    flex-direction: column;
+    height: auto;
+  }
+  .subscribe-box {
+    padding-top: 12px;
+  }
+}
