@@ -59,3 +59,20 @@
   margin-top: 32px;
   font-weight: bold;
 }
+
+@media screen and (width <= 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    justify-content: normal;
+    overflow: visible;
+  }
+  .header h1 {
+    margin: 12px;
+  }
+  .header-right {
+    height: 0;
+    padding: 30px;
+  }
+}
