@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.56d70320.css",
-    "main.js": "/shopping-cart/static/js/main.ac671cc4.js",
-    "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.a7b53c85edeb8966656a.jpg",
+    "main.css": "/shopping-cart/static/css/main.6b317af0.css",
+    "main.js": "/shopping-cart/static/js/main.f4d07c50.js",
+    "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.82dd2e6ba475af1556b6.jpg",
     "static/media/pink-sweater-front.jpg": "/shopping-cart/static/media/pink-sweater-front.81496435b012305bb976.jpg",
     "static/media/black-front-sweater.jpg": "/shopping-cart/static/media/black-front-sweater.ebb32737eea45362f9f6.jpg",
     "static/media/alex-haigh-fEt6Wd4t4j0-unsplash.jpg": "/shopping-cart/static/media/alex-haigh-fEt6Wd4t4j0-unsplash.f61f196286f3c2eb8a08.jpg",
@@ -11,11 +11,11 @@
     "static/media/Roboto-Regular.ttf": "/shopping-cart/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
-    "main.56d70320.css.map": "/shopping-cart/static/css/main.56d70320.css.map",
-    "main.ac671cc4.js.map": "/shopping-cart/static/js/main.ac671cc4.js.map"
+    "main.6b317af0.css.map": "/shopping-cart/static/css/main.6b317af0.css.map",
+    "main.f4d07c50.js.map": "/shopping-cart/static/js/main.f4d07c50.js.map"
   },
   "entrypoints": [
-    "static/css/main.56d70320.css",
-    "static/js/main.ac671cc4.js"
+    "static/css/main.6b317af0.css",
+    "static/js/main.f4d07c50.js"
   ]
 }
