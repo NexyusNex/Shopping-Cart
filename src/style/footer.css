@@ -90,6 +90,7 @@
   .Footer {
     flex-direction: column;
     height: auto;
+    padding-bottom: 16px;
   }
   .subscribe-box {
     padding-top: 12px;
