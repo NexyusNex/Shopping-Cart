@@ -63,3 +63,9 @@
 .content button:active {
   outline: 2px solid rgb(0, 0, 0);
 }
+
+@media screen and (width <=350px) {
+  .content {
+    width: 250px;
+  }
+}
