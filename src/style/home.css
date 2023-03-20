@@ -11,6 +11,7 @@
 
 .home {
   display: flex;
+  min-height: 500px;
   height: 80svh;
   background-color: rgb(58, 41, 41);
   overflow: hidden;
