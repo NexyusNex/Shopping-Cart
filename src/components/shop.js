@@ -70,7 +70,7 @@ export default function Shop(props) {
     <div className="Shop">
       <Header cart={props.cart}></Header>
       <div className="categories">
-        <button className="men-button" onClick={openMaleCategory}>
+        <button className="men-button selected" onClick={openMaleCategory}>
           Men
         </button>
         <button className="women-button" onClick={openFemaleCategory}>
