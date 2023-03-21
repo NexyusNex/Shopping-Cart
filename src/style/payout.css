@@ -36,7 +36,6 @@
 }
 
 .buy-item {
-  gap: 20px;
   padding: 0 12px;
   align-items: center;
   height: 150px;
@@ -54,10 +53,10 @@
 }
 
 .buy-item-input {
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
   gap: 12px;
 }
 
@@ -182,5 +181,8 @@
   }
   .buy-item-text {
     text-align: center;
+  }
+  .buy-item-input {
+    margin-left: 0;
   }
 }
