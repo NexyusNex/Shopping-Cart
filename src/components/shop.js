@@ -6,8 +6,11 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 export default function Shop(props) {
+  let isFemaleCategory = false;
   const clothesCollectionRef = collection(db, "Clothes");
   const [itemList, setItemList] = useState([]);
+  const [maleList, setMaleList] = useState([]);
+  const [femaleList, setFemaleList] = useState([]);
   const clothesImages = require.context("../images/clothes", true);
 
   useEffect(() => {
@@ -21,7 +24,13 @@ export default function Shop(props) {
         ...doc.data(),
         id: Number(doc.id),
       }));
-      setItemList(filteredData);
+      const male = filteredData.filter((element) => element.gender === "male");
+      const female = filteredData.filter(
+        (element) => element.gender === "female"
+      );
+      setMaleList(male);
+      setFemaleList(female);
+      setItemList(male);
     } catch (error) {
       console.log(error);
     }
@@ -33,6 +42,8 @@ export default function Shop(props) {
     let bool = false;
 
     clone.forEach((item) => {
+      console.log(itemList);
+      console.log(clone);
       if (item.name === itemList[id].name) {
         item.count += 1;
         props.setCart(clone);
@@ -43,12 +54,30 @@ export default function Shop(props) {
     if (!bool) props.setCart((cart) => [...cart, itemList[id]]);
   }
 
+  function openFemaleCategory() {
+    console.log(femaleList);
+    isFemaleCategory = true;
+    setItemList(femaleList);
+    console.log(...props.cart);
+  }
+
+  function openMaleCategory() {
+    console.log(maleList);
+    isFemaleCategory = false;
+    setItemList(maleList);
+    console.log(...props.cart);
+  }
+
   return (
     <div className="Shop">
       <Header cart={props.cart}></Header>
       <div className="categories">
-        <button className="men-button">Men</button>
-        <button className="women-button">Women</button>
+        <button className="men-button" onClick={openMaleCategory}>
+          Men
+        </button>
+        <button className="women-button" onClick={openFemaleCategory}>
+          Women
+        </button>
       </div>
       <div className="item-container">
         <div className="item-list">
@@ -59,7 +88,12 @@ export default function Shop(props) {
                 <div className="item-description">
                   <p>{item.name}</p> <p>${item.cost}</p>
                 </div>
-                <button className="item-btn" id={item.id} onClick={addToCart}>
+                <button
+                  className="item-btn"
+                  id={item.id}
+                  data-name="item.name"
+                  onClick={addToCart}
+                >
                   Add to cart
                 </button>
               </div>
