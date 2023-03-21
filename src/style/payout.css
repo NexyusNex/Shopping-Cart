@@ -17,6 +17,12 @@
   min-height: 600px;
 }
 
+.delete,
+.count,
+.confirm-purchase {
+  user-select: none;
+}
+
 .buy-item,
 .confirm-purchase {
   display: flex;
