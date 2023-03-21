@@ -61,6 +61,7 @@
   color: #362141;
   border-radius: 0 8px 8px 0;
   transition: 200ms ease;
+  user-select: none;
 }
 
 .subscribe-input button:hover {
