@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.1f96d08b.css",
+    "main.css": "/shopping-cart/static/css/main.13ce0eb7.css",
     "main.js": "/shopping-cart/static/js/main.bab8409c.js",
     "static/media/pink-sweater-front.png": "/shopping-cart/static/media/pink-sweater-front.47618c7f1c222f86fa2c.png",
     "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.f3e2b6ef34e8f15c0953.png",
@@ -19,11 +19,11 @@
     "static/media/green-sweater.png": "/shopping-cart/static/media/green-sweater.061b16513b6864f00a56.png",
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
-    "main.1f96d08b.css.map": "/shopping-cart/static/css/main.1f96d08b.css.map",
+    "main.13ce0eb7.css.map": "/shopping-cart/static/css/main.13ce0eb7.css.map",
     "main.bab8409c.js.map": "/shopping-cart/static/js/main.bab8409c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f96d08b.css",
+    "static/css/main.13ce0eb7.css",
     "static/js/main.bab8409c.js"
   ]
 }
