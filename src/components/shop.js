@@ -6,7 +6,6 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 export default function Shop(props) {
-  let isFemaleCategory = false;
   const clothesCollectionRef = collection(db, "Clothes");
   const [itemList, setItemList] = useState([]);
   const [maleList, setMaleList] = useState([]);
@@ -24,48 +23,43 @@ export default function Shop(props) {
         ...doc.data(),
         id: Number(doc.id),
       }));
-      const male = filteredData.filter((element) => element.gender === "male");
-      const female = filteredData.filter(
-        (element) => element.gender === "female"
+      setMaleList(filteredData.filter((element) => element.gender === "male"));
+      setFemaleList(
+        filteredData.filter((element) => element.gender === "female")
       );
-      setMaleList(male);
-      setFemaleList(female);
-      setItemList(male);
+      setItemList(filteredData.filter((element) => element.gender === "male"));
     } catch (error) {
       console.log(error);
     }
   };
 
   function addToCart(e) {
-    const id = e.target.id;
+    const clickedItem = itemList.filter(
+      (element) => element.name === e.target.getAttribute("data-name")
+    );
+    console.log(clickedItem);
     let clone = [...props.cart];
     let bool = false;
 
     clone.forEach((item) => {
       console.log(itemList);
       console.log(clone);
-      if (item.name === itemList[id].name) {
+      if (item.name === clickedItem[0].name) {
         item.count += 1;
         props.setCart(clone);
         bool = true;
       }
     });
 
-    if (!bool) props.setCart((cart) => [...cart, itemList[id]]);
+    if (!bool) props.setCart((cart) => [...cart, clickedItem[0]]);
   }
 
   function openFemaleCategory() {
-    console.log(femaleList);
-    isFemaleCategory = true;
     setItemList(femaleList);
-    console.log(...props.cart);
   }
 
   function openMaleCategory() {
-    console.log(maleList);
-    isFemaleCategory = false;
     setItemList(maleList);
-    console.log(...props.cart);
   }
 
   return (
@@ -91,7 +85,7 @@ export default function Shop(props) {
                 <button
                   className="item-btn"
                   id={item.id}
-                  data-name="item.name"
+                  data-name={item.name}
                   onClick={addToCart}
                 >
                   Add to cart
