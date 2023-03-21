@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
   return (
     <div className="header">
-      <h1>Clothes shop</h1>
+      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <h1 className="site-title">Clothes shop</h1>
+      </Link>
       <div className="header-right">
         <ul>
           <Link to="/">
