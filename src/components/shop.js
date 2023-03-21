@@ -54,11 +54,15 @@ export default function Shop(props) {
     if (!bool) props.setCart((cart) => [...cart, clickedItem[0]]);
   }
 
-  function openFemaleCategory() {
+  function openFemaleCategory(e) {
+    document.querySelector(".men-button").classList.remove("selected");
+    e.target.classList.add("selected");
     setItemList(femaleList);
   }
 
-  function openMaleCategory() {
+  function openMaleCategory(e) {
+    document.querySelector(".women-button").classList.remove("selected");
+    e.target.classList.add("selected");
     setItemList(maleList);
   }
 
