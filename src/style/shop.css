@@ -22,17 +22,22 @@
   width: 150px;
   height: 40px;
   border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 200ms ease;
 }
 
-.men-button {
-  background-color: rgb(0, 0, 0);
+.men-button.selected,
+.women-button.selected {
+  background-color: black;
+  transform: scale(1.1);
   color: white;
-  font-size: 1.2rem;
 }
 
-.women-button {
-  background-color: white;
-  font-size: 1.2rem;
+.men-button:hover,
+.women-button:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.466);
+  font-weight: bold;
 }
 
 .item-container {
