@@ -23,6 +23,12 @@ export default function Pdp(props) {
             Praesent id congue urna. Curabitur mattis lorem eu efficitur
             porttitor. Mauris at laoreet quam.
           </p>
+          <h3>Color:</h3>
+          <div className="color-picker">
+            <div className="color black">
+              <div></div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer></Footer>
