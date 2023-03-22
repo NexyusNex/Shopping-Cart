@@ -13,7 +13,7 @@ export default function Header(props) {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="/Shop">
+          <Link to="/shop">
             <li>Shop</li>
           </Link>
           <Link to="/pdp">
