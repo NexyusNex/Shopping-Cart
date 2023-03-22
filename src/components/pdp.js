@@ -26,7 +26,7 @@ export default function Pdp(props) {
           <h3>Color:</h3>
           <div className="color-picker">
             <div className="color black">
-              <button></button>
+              <button className="color-button"></button>
             </div>
           </div>
           <h3>Size:</h3>
@@ -37,6 +37,7 @@ export default function Pdp(props) {
             <option>L</option>
             <option>XL</option>
           </select>
+          <button className="purchase-button">Add to cart</button>
         </div>
       </div>
       <Footer></Footer>
