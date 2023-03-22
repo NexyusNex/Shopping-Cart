@@ -18,7 +18,6 @@ export default function Payout(props) {
   }
 
   function increment(e) {
-    console.log(props.cart);
     let clone = [...props.cart];
     clone.forEach((item) => {
       if (item.id === Number(e.target.id)) item.count++;
