@@ -26,6 +26,7 @@ export default function Pdp(props) {
         id: Number(doc.id),
       }));
       console.log(filteredData);
+
       setProductItem(
         filteredData.filter(
           (product) => product.id === Number(params.productId)
@@ -35,6 +36,35 @@ export default function Pdp(props) {
       console.log(error);
     }
   };
+
+  function addToCart(e) {
+    let updatedName = `${productItem[0].name} ${
+      document.querySelector("select").value
+    }`;
+    let clone = [...props.cart];
+    let bool = false;
+
+    clone.forEach((item) => {
+      if (item.name === updatedName) {
+        item.count += 1;
+        props.setCart(clone);
+        bool = true;
+      }
+    });
+
+    if (!bool) {
+      props.setCart((cart) => [
+        ...cart,
+        {
+          name: updatedName,
+          cost: productItem[0].cost,
+          id: productItem[0].id,
+          count: productItem[0].count,
+          img: productItem[0].img,
+        },
+      ]);
+    }
+  }
 
   return (
     <div className="Pdp">
@@ -57,11 +87,7 @@ export default function Pdp(props) {
                 Nunc bibendum interdum justo. Cras facilisis est cursus risus
                 cursus scelerisque. Duis convallis felis vel augue dictum
                 viverra in ac ipsum. Nunc ac consequat nulla, et consectetur
-                est. Pellentesque ut dapibus tortor. Mauris vel placerat arcu,
-                nec condimentum mauris. In fringilla turpis augue, eu feugiat
-                neque bibendum eget. Suspendisse potenti. Praesent id congue
-                urna. Curabitur mattis lorem eu efficitur porttitor. Mauris at
-                laoreet quam.
+                est. Pellentesque ut dapibus tortor.
               </p>
               <h3>Color:</h3>
               <div className="color-picker">
@@ -77,7 +103,9 @@ export default function Pdp(props) {
                 <option value="L">L</option>
                 <option value="XL">XL</option>
               </select>
-              <button className="purchase-button">Add to cart</button>
+              <button className="purchase-button" onClick={addToCart}>
+                Add to cart
+              </button>
             </div>
           </div>
         );
