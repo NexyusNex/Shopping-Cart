@@ -72,7 +72,7 @@ export default function Shop(props) {
                     id={item.id}
                     data-name={item.name}
                   >
-                    Add to cart
+                    See product
                   </button>
                 </Link>
               </div>
