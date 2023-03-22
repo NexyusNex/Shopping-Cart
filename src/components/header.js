@@ -16,7 +16,9 @@ export default function Header(props) {
           <Link to="/Shop">
             <li>Shop</li>
           </Link>
-          <li>About</li>
+          <Link to="/Pdp">
+            <li>About</li>
+          </Link>
         </ul>
         <div className="cart">
           <Link to="/Payout">
