@@ -29,6 +29,13 @@ export default function Pdp(props) {
               <div></div>
             </div>
           </div>
+          <select>
+            <option>XS</option>
+            <option>S</option>
+            <option selected>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
         </div>
       </div>
       <Footer></Footer>
