@@ -1,8 +1,12 @@
 import Footer from "./footer";
 import Header from "./header";
 import "../style/pdp.css";
+import { useParams } from "react-router-dom";
 
 export default function Pdp(props) {
+  let id = useParams(":productId");
+  console.log(id);
+
   return (
     <div className="Pdp">
       <Header cart={props.cart}></Header>
@@ -30,12 +34,12 @@ export default function Pdp(props) {
             </div>
           </div>
           <h3>Size:</h3>
-          <select className="size-select">
-            <option>XS</option>
-            <option>S</option>
-            <option selected>M</option>
-            <option>L</option>
-            <option>XL</option>
+          <select className="size-select" defaultValue={"M"}>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
           </select>
           <button className="purchase-button">Add to cart</button>
         </div>
