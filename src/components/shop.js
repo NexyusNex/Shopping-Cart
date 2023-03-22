@@ -4,6 +4,7 @@ import Footer from "./footer";
 import { db } from "../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Shop(props) {
   const clothesCollectionRef = collection(db, "Clothes");
@@ -86,14 +87,15 @@ export default function Shop(props) {
                 <div className="item-description">
                   <p>{item.name}</p> <p>${item.cost}</p>
                 </div>
-                <button
-                  className="item-btn"
-                  id={item.id}
-                  data-name={item.name}
-                  onClick={addToCart}
-                >
-                  Add to cart
-                </button>
+                <Link to={`/shop/${item.id}`}>
+                  <button
+                    className="item-btn"
+                    id={item.id}
+                    data-name={item.name}
+                  >
+                    Add to cart
+                  </button>
+                </Link>
               </div>
             );
           })}
