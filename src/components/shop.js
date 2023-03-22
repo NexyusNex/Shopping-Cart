@@ -34,27 +34,6 @@ export default function Shop(props) {
     }
   };
 
-  function addToCart(e) {
-    const clickedItem = itemList.filter(
-      (element) => element.name === e.target.getAttribute("data-name")
-    );
-    console.log(clickedItem);
-    let clone = [...props.cart];
-    let bool = false;
-
-    clone.forEach((item) => {
-      console.log(itemList);
-      console.log(clone);
-      if (item.name === clickedItem[0].name) {
-        item.count += 1;
-        props.setCart(clone);
-        bool = true;
-      }
-    });
-
-    if (!bool) props.setCart((cart) => [...cart, clickedItem[0]]);
-  }
-
   function openFemaleCategory(e) {
     document.querySelector(".men-button").classList.remove("selected");
     e.target.classList.add("selected");
