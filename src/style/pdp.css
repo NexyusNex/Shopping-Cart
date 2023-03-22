@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .product-container {
   display: grid;
   margin-top: 28px;
@@ -9,4 +14,21 @@
 
 .img {
   background-color: aquamarine;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.product-info h1 {
+  letter-spacing: 4px;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid black;
+}
+
+.cost-text {
+  font-size: 24px;
 }
