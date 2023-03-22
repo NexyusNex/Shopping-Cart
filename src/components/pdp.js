@@ -29,6 +29,7 @@ export default function Pdp(props) {
               <div></div>
             </div>
           </div>
+          <h3>Size:</h3>
           <select className="size-select">
             <option>XS</option>
             <option>S</option>
