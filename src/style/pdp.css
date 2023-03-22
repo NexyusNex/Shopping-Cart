@@ -1,4 +1,12 @@
 .product-container {
+  display: grid;
+  margin-top: 28px;
   padding: 0 10%;
   grid-template-columns: repeat(2, 1fr);
+  min-height: 500px;
+  height: 60svh;
+}
+
+.img {
+  background-color: aquamarine;
 }
