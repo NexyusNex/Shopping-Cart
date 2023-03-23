@@ -77,7 +77,7 @@ export default function Pdp(props) {
 
       {productItem.map((item) => {
         return (
-          <div className="product-container">
+          <div className="product-container" key={item.id}>
             <div className="image-container">
               <img src={clothesImages(`./${item.img}`)} alt={item.name}></img>
             </div>
