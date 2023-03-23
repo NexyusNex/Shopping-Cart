@@ -16,7 +16,6 @@ export default function Pdp(props) {
 
   useEffect(() => {
     GetProductItem();
-    console.log(productItem);
   }, []);
 
   const GetProductItem = async () => {
@@ -26,7 +25,6 @@ export default function Pdp(props) {
         ...doc.data(),
         id: Number(doc.id),
       }));
-      console.log(filteredData);
 
       setProductItem(
         filteredData.filter(
