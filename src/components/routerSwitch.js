@@ -11,9 +11,12 @@ const RouteSwitch = () => {
     <BrowserRouter basename="/shopping-cart">
       <Routes>
         <Route path="/" element={<App cart={cart} setCart={setCart} />} />
-        <Route path="/shop" element={<Shop cart={cart} setCart={setCart} />} />
         <Route
-          path="/shop/:productId"
+          path="/shop/:categoryParams/"
+          element={<Shop cart={cart} setCart={setCart} />}
+        />
+        <Route
+          path="/shop/:categoryParams/:productId"
           element={<Pdp cart={cart} setCart={setCart} />}
         />
         <Route
