@@ -12,6 +12,7 @@ export default function Pdp(props) {
   const [productItem, setProductItem] = useState([]);
 
   let params = useParams(":productId");
+  let urlParams = useParams(":categoryParams");
 
   useEffect(() => {
     GetProductItem();
@@ -69,7 +70,10 @@ export default function Pdp(props) {
   return (
     <div className="Pdp">
       <Header cart={props.cart}></Header>
-      <Link to="/shop" style={{ textDecoration: "none" }}>
+      <Link
+        to={`/shop/${urlParams.categoryParams}`}
+        style={{ textDecoration: "none" }}
+      >
         <button className="arrow-back">&lt;</button>
       </Link>
 
