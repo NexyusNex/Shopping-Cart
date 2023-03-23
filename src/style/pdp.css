@@ -20,6 +20,8 @@
   font-size: 3.5rem;
   user-select: none;
   transition: 200ms ease;
+  background-color: white;
+  border: none;
 }
 
 .arrow-back:hover {
