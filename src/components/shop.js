@@ -4,7 +4,7 @@ import Footer from "./footer";
 import { db } from "../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Shop(props) {
   const clothesCollectionRef = collection(db, "Clothes");
@@ -12,6 +12,7 @@ export default function Shop(props) {
   const [maleList, setMaleList] = useState([]);
   const [femaleList, setFemaleList] = useState([]);
   const clothesImages = require.context("../images/clothes", true);
+  let params = useParams(":categoryParams");
 
   useEffect(() => {
     GetClothesList();
@@ -28,19 +29,34 @@ export default function Shop(props) {
       setFemaleList(
         filteredData.filter((element) => element.gender === "female")
       );
-      setItemList(filteredData.filter((element) => element.gender === "male"));
+
+      if (params.categoryParams !== "women") {
+        setItemList(
+          filteredData.filter((element) => element.gender === "male")
+        );
+        document.querySelector(".men-button").classList.add("selected");
+      }
+
+      if (params.categoryParams === "women") {
+        setItemList(
+          filteredData.filter((element) => element.gender === "female")
+        );
+        document.querySelector(".women-button").classList.add("selected");
+      }
     } catch (error) {
       console.log(error);
     }
   };
 
   function openFemaleCategory(e) {
+    params.categoryParams = "women";
     document.querySelector(".men-button").classList.remove("selected");
     e.target.classList.add("selected");
     setItemList(femaleList);
   }
 
   function openMaleCategory(e) {
+    params.categoryParams = "men";
     document.querySelector(".women-button").classList.remove("selected");
     e.target.classList.add("selected");
     setItemList(maleList);
@@ -50,7 +66,7 @@ export default function Shop(props) {
     <div className="Shop">
       <Header cart={props.cart}></Header>
       <div className="categories">
-        <button className="men-button selected" onClick={openMaleCategory}>
+        <button className="men-button" onClick={openMaleCategory}>
           Men
         </button>
         <button className="women-button" onClick={openFemaleCategory}>
@@ -66,7 +82,7 @@ export default function Shop(props) {
                 <div className="item-description">
                   <p>{item.name}</p> <p>${item.cost}</p>
                 </div>
-                <Link to={`/shop/${item.id}`}>
+                <Link to={`/shop/${params.categoryParams}/${item.id}`}>
                   <button
                     className="item-btn"
                     id={item.id}
