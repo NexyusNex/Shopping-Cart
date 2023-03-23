@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.84d5eeb9.css",
-    "main.js": "/shopping-cart/static/js/main.812d9ce4.js",
+    "main.js": "/shopping-cart/static/js/main.29c061cf.js",
     "static/media/pink-sweater-front.png": "/shopping-cart/static/media/pink-sweater-front.47618c7f1c222f86fa2c.png",
-    "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.f3e2b6ef34e8f15c0953.png",
+    "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.5610e01836a28e8c1798.png",
     "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.82dd2e6ba475af1556b6.jpg",
     "static/media/black-front-sweater.jpg": "/shopping-cart/static/media/black-front-sweater.ebb32737eea45362f9f6.jpg",
-    "static/media/Isolated_white_t-shirt_front.png": "/shopping-cart/static/media/Isolated_white_t-shirt_front.ad6acd57b31de3d839b9.png",
-    "static/media/purple-female-dress.png": "/shopping-cart/static/media/purple-female-dress.2155ef55c2b87b02c91e.png",
-    "static/media/Isolated_black_t-shirt_front.png": "/shopping-cart/static/media/Isolated_black_t-shirt_front.8bc4e236d2c27e095894.png",
-    "static/media/man-underwear.png": "/shopping-cart/static/media/man-underwear.b88bf5dbe1f8bc2b9225.png",
-    "static/media/blue-female-dress.png": "/shopping-cart/static/media/blue-female-dress.1acd11bb7b156def7e55.png",
-    "static/media/casual-men-shortpants.png": "/shopping-cart/static/media/casual-men-shortpants.b2fe8a55031b5d6a1cc4.png",
+    "static/media/Isolated_white_t-shirt_front.png": "/shopping-cart/static/media/Isolated_white_t-shirt_front.32813d6aeac175ff5727.png",
+    "static/media/purple-female-dress.png": "/shopping-cart/static/media/purple-female-dress.e611c46ffac81c902939.png",
+    "static/media/man-underwear.png": "/shopping-cart/static/media/man-underwear.5dbe0a161b6db3d2e54a.png",
+    "static/media/Isolated_black_t-shirt_front.png": "/shopping-cart/static/media/Isolated_black_t-shirt_front.fe244943dea54eb3b1f6.png",
+    "static/media/blue-female-dress.png": "/shopping-cart/static/media/blue-female-dress.0b08f7c2f98a4f029810.png",
     "static/media/blue-skirt.png": "/shopping-cart/static/media/blue-skirt.3b02838befe72b92cca9.png",
+    "static/media/casual-men-shortpants.png": "/shopping-cart/static/media/casual-men-shortpants.0663d8c5fdbc88bdafde.png",
     "static/media/vintage-skirt.png": "/shopping-cart/static/media/vintage-skirt.db3bc1ede5f747733d9f.png",
     "static/media/Roboto-Regular.ttf": "/shopping-cart/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/long-skirt.png": "/shopping-cart/static/media/long-skirt.7dec2de2ae49ab6323e6.png",
@@ -20,10 +20,10 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
     "main.84d5eeb9.css.map": "/shopping-cart/static/css/main.84d5eeb9.css.map",
-    "main.812d9ce4.js.map": "/shopping-cart/static/js/main.812d9ce4.js.map"
+    "main.29c061cf.js.map": "/shopping-cart/static/js/main.29c061cf.js.map"
   },
   "entrypoints": [
     "static/css/main.84d5eeb9.css",
-    "static/js/main.812d9ce4.js"
+    "static/js/main.29c061cf.js"
   ]
 }
