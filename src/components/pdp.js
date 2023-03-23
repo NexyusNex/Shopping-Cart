@@ -1,7 +1,7 @@
 import Footer from "./footer";
 import Header from "./header";
 import "../style/pdp.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firebase";
@@ -69,7 +69,9 @@ export default function Pdp(props) {
   return (
     <div className="Pdp">
       <Header cart={props.cart}></Header>
-      <div className="arrow-back">&lt;</div>
+      <Link to="/shop" style={{ textDecoration: "none" }}>
+        <button className="arrow-back">&lt;</button>
+      </Link>
 
       {productItem.map((item) => {
         return (
