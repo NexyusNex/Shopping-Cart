@@ -69,6 +69,7 @@ export default function Pdp(props) {
   return (
     <div className="Pdp">
       <Header cart={props.cart}></Header>
+      <div className="arrow-back">&lt;</div>
 
       {productItem.map((item) => {
         return (
