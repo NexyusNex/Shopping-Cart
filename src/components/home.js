@@ -1,5 +1,5 @@
 import "../style/home.css";
-import clarkImg from "../images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg";
+import clarkImg from "../images/home/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
