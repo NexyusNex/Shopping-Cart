@@ -73,3 +73,12 @@
 .home-description-right img {
   box-shadow: 30px -30px rgb(241, 210, 255);
 }
+
+.desc-hidden {
+  opacity: 0;
+  transition: 1s all;
+}
+
+.desc-show {
+  opacity: 1;
+}
