@@ -1,30 +1,52 @@
 .home-description {
+  box-sizing: border-box;
+  height: 130svh;
   min-height: 500px;
-  height: 100svh;
   display: grid;
   grid-template-columns: repeat(2, minmax(50px, 1fr));
   padding: 0 10%;
+  margin: 80px 0;
 }
 
-.home-description-left {
-  padding: 0 10%;
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home-description-left-text {
-  margin-top: auto;
-  padding-bottom: 20px;
-}
-
-.home-description-left-text p {
+.home-description p {
   margin: 0;
   font-size: 18px;
 }
 
-.home-description-left img {
-  box-shadow: -30px 30px rgb(241, 210, 255);
+.home-description img {
   height: 700px;
   width: 100%;
+}
+
+.home-description-left,
+.home-description-right {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-description-left {
+  justify-content: flex-start;
+}
+
+.home-description-left-text {
+  margin-top: 20px;
+}
+
+.home-description-left img {
+  box-shadow: -30px 30px rgb(241, 210, 255);
+}
+
+.home-description-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.home-description-right-text {
+  margin-bottom: 40px;
+}
+
+.home-description-right img {
+  box-shadow: 30px -30px rgb(241, 210, 255);
 }
