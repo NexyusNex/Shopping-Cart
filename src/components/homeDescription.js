@@ -6,6 +6,7 @@ export default function HomeDescription() {
   return (
     <div className="home-description">
       <div className="home-description-left">
+        <div className="home-desc-hline-left"></div>
         <img src={fashionLeft} alt="fashion img left"></img>
         <div className="home-description-left-text">
           <h1>What we do</h1>
@@ -21,6 +22,7 @@ export default function HomeDescription() {
           <p>Because, like you, we love fashion!</p>
         </div>
         <img src={fashionRight} alt="fashion img right"></img>
+        <div className="home-desc-hline-right"></div>
       </div>
     </div>
   );
