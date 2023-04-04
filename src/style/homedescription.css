@@ -1,0 +1,24 @@
+.home-description {
+  min-height: 500px;
+  height: 100svh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  padding: 0 10%;
+}
+
+.home-description-left {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-description-left-text {
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+.home-description-left img {
+  box-shadow: -30px 30px rgb(241, 210, 255);
+  height: 600px;
+  width: 100%;
+}
