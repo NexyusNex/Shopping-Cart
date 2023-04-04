@@ -1,14 +1,12 @@
 import "../style/homedescription.css";
 import fashionLeft from "../images/home/freestocks-_3Q3tsJ01nc-unsplash.jpg";
 import fashionRight from "../images/home/tyler-nix-Zhh3WM2ko3s-unsplash.jpg";
-import { useRef } from "react";
 import { useEffect } from "react";
 
 export default function HomeDescription() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("desc-show");
         } else {
@@ -22,14 +20,14 @@ export default function HomeDescription() {
 
   return (
     <div className="home-description">
-      <div className="home-description-left desc-hidden">
+      <div className="home-description-left">
         <div className="home-desc-hline-left"></div>
         <img
           src={fashionLeft}
           alt="fashion img left"
           className="desc-hidden"
         ></img>
-        <div className="home-description-left-text">
+        <div className="home-description-left-text desc-hidden">
           <h1>What we do</h1>
           <p>
             Here in clothes shop we want to give our customers the best quality
@@ -37,8 +35,8 @@ export default function HomeDescription() {
           </p>
         </div>
       </div>
-      <div className="home-description-right desc-hidden">
-        <div className="home-description-right-text">
+      <div className="home-description-right">
+        <div className="home-description-right-text desc-hidden">
           <h1>Why we do it</h1>
           <p>Because, like you, we love fashion!</p>
         </div>
