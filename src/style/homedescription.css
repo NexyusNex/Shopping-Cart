@@ -5,7 +5,8 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(50px, 1fr));
   padding: 0 10%;
-  margin: 80px 0;
+  margin: 110px 0;
+  overflow: hidden;
 }
 
 .home-description p {
@@ -24,6 +25,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.home-desc-hline-left,
+.home-desc-hline-right {
+  position: absolute;
+  height: 4px;
+  z-index: -1;
+  background-color: black;
+}
+
+.home-desc-hline-left {
+  width: 300px;
+  top: 20%;
+  left: -250px;
+  right: 0;
+}
+
+.home-desc-hline-right {
+  width: 300px;
+  bottom: 20%;
+  right: -250px;
 }
 
 .home-description-left {
