@@ -15,7 +15,7 @@
 }
 
 .home-description img {
-  height: 700px;
+  height: 50%px;
   width: 100%;
 }
 
@@ -83,4 +83,58 @@
 .desc-show {
   transform: translateX(0);
   opacity: 1;
+}
+
+.sm-view {
+  display: none;
+}
+
+@media screen and (width<=1250px) {
+  .home-description {
+    height: 110svh;
+  }
+}
+
+@media screen and (width<=1000px) {
+  .home-description {
+    height: 100svh;
+  }
+}
+
+@media screen and (width<=900px) {
+  .home-description {
+    height: 90svh;
+  }
+}
+
+@media screen and (width<=600px) {
+  .home-description {
+    grid-template-columns: minmax(50px, 1fr);
+    gap: 100px;
+    height: auto;
+  }
+
+  .home-description-left {
+    flex-direction: column-reverse;
+  }
+
+  .home-desc-hline-left {
+    top: 50%;
+  }
+
+  .home-description-right {
+    flex-direction: column-reverse;
+  }
+
+  .home-desc-hline-right {
+    bottom: 50%;
+  }
+
+  .lg-view {
+    display: none;
+  }
+
+  .sm-view {
+    display: block;
+  }
 }
