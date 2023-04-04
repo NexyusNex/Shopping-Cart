@@ -76,9 +76,11 @@
 
 .desc-hidden {
   opacity: 0;
+  transform: translateX(-50%);
   transition: 1s all;
 }
 
 .desc-show {
+  transform: translateX(0);
   opacity: 1;
 }
