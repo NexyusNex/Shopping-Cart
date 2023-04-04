@@ -27,7 +27,11 @@ export default function HomeDescription() {
           alt="fashion img left"
           className="desc-hidden"
         ></img>
-        <div className="home-description-left-text desc-hidden">
+        <div className="home-description-left-text desc-hidden lg-view">
+          <h1>Why we do it</h1>
+          <p>Because, like you, we love fashion!</p>
+        </div>
+        <div className="home-description-right-text desc-hidden sm-view">
           <h1>What we do</h1>
           <p>
             Here in clothes shop we want to give our customers the best quality
@@ -36,7 +40,14 @@ export default function HomeDescription() {
         </div>
       </div>
       <div className="home-description-right">
-        <div className="home-description-right-text desc-hidden">
+        <div className="home-description-right-text desc-hidden lg-view">
+          <h1>What we do</h1>
+          <p>
+            Here in clothes shop we want to give our customers the best quality
+            and design.
+          </p>
+        </div>
+        <div className="home-description-left-text desc-hidden sm-view">
           <h1>Why we do it</h1>
           <p>Because, like you, we love fashion!</p>
         </div>
