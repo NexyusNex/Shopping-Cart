@@ -148,14 +148,14 @@
   .home-shirt-img {
     width: 200px;
     height: 280px;
-    left: 0;
+    left: -20px;
     top: -140px;
   }
 
   .home-shirt-item-img {
     width: 200px;
     height: 210px;
-    right: 0;
+    right: -20px;
     bottom: -180px;
   }
 
