@@ -10,6 +10,8 @@ export default function HomeShirt() {
           alt="Tshirt showcase"
           className="home-shirt-img"
         ></img>
+        <h1>Check this out!</h1>
+        <p>Our amazing black T-shirt is going to make your days better!</p>
       </div>
     </div>
   );
