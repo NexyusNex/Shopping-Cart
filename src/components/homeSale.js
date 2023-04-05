@@ -1,6 +1,7 @@
 import "../style/homesale.css";
 import saleImg from "../images/home/arnel-hasanovic-Nl-SXO4FAHw-unsplash.jpg";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function HomeSale() {
   useEffect(() => {
@@ -28,6 +29,11 @@ export default function HomeSale() {
           So you can discover the foundations and finishing touches for any
           outfit.
         </p>
+        <Link to="/shop/women/5">
+          <button className="fav-item-btn hs-hidden">
+            View our favorite item
+          </button>
+        </Link>
       </div>
     </div>
   );
