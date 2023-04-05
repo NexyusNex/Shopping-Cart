@@ -1,14 +1,10 @@
 import "../style/home.css";
-import clarkImg from "../images/home/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="home">
-      <div
-        className="home-background"
-        style={{ backgroundImage: `url(${clarkImg})` }}
-      ></div>
+      <div className="home-background"></div>
       <div className="content">
         <h1>Clothes for everyone</h1>
         <p>
