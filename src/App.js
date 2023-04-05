@@ -2,7 +2,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
 import HomeDescription from "./components/homeDescription";
-import HomeSale from "./components/homeSale";
+import HomeFav from "./components/homeFav";
 
 function App(props) {
   return (
@@ -10,7 +10,7 @@ function App(props) {
       <Header cart={props.cart}></Header>
       <Home></Home>
       <HomeDescription></HomeDescription>
-      <HomeSale></HomeSale>
+      <HomeFav></HomeFav>
       <Footer></Footer>
     </div>
   );
