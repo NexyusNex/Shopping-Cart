@@ -3,11 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .home-shirt-content {
   background-color: rgb(241, 210, 255);
   width: 700px;
   height: 600px;
+  position: relative;
+}
+
+.home-shirt-img {
+  width: 500px;
+  top: -100px;
+  left: -300px;
+  position: absolute;
 }
