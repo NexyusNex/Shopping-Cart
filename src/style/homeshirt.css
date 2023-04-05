@@ -1,0 +1,13 @@
+.home-shirt {
+  height: 120svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-shirt-content {
+  background-color: rgb(241, 210, 255);
+  width: 700px;
+  height: 600px;
+}
