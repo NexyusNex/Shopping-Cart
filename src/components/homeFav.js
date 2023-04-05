@@ -9,8 +9,6 @@ export default function HomeFav() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("hs-show");
-        } else {
-          entry.target.classList.remove("hs-show");
         }
       });
     });
