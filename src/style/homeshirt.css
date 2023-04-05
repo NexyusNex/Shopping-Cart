@@ -60,3 +60,110 @@
   cursor: pointer;
   transform: scale(1.2);
 }
+
+@media screen and (width<=1200px) {
+  .home-shirt-img {
+    width: 350px;
+    left: -210px;
+  }
+
+  .home-shirt-item-img {
+    width: 310px;
+    height: 310px;
+  }
+
+  .home-shirt-content {
+    width: 500px;
+    height: 450px;
+  }
+
+  .home-shirt-content-text {
+    width: 450px;
+    top: -35px;
+  }
+
+  .home-shirt-content-text h1 {
+    font-size: 48px;
+  }
+
+  .home-shirt-content-text p {
+    font-size: 20px;
+  }
+
+  .home-shirt-button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width<=1000px) {
+  .home-shirt-img {
+    width: 300px;
+    left: -110px;
+  }
+}
+
+@media screen and (width<=760px) {
+  .home-shirt-img {
+    width: 300px;
+    height: 370px;
+    left: -20px;
+    top: -200px;
+  }
+
+  .home-shirt-item-img {
+    right: -50px;
+    bottom: -280px;
+  }
+
+  .home-shirt-content {
+    width: 330px;
+  }
+
+  .home-shirt-content-text {
+    width: 320px;
+    top: 200px;
+    right: -80px;
+  }
+
+  .home-shirt-content-text h1 {
+    font-size: 32px;
+  }
+
+  .home-shirt-content-text p {
+    font-size: 18px;
+  }
+
+  .home-shirt-button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (width<=600px) {
+  .home-shirt-content-text {
+    right: 0px;
+  }
+}
+
+@media screen and (width<=450px) {
+  .home-shirt-img {
+    width: 200px;
+    height: 280px;
+    left: 0;
+    top: -140px;
+  }
+
+  .home-shirt-item-img {
+    width: 200px;
+    height: 210px;
+    right: 0;
+    bottom: -180px;
+  }
+
+  .home-shirt-content {
+    width: 250px;
+  }
+
+  .home-shirt-content-text {
+    right: -35px;
+  }
+}
