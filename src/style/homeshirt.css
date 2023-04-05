@@ -7,17 +7,42 @@
 
 .home-shirt-content {
   background-color: rgb(241, 210, 255);
-  width: 700px;
-  height: 600px;
+  width: 640px;
+  height: 500px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.home-shirt-img {
+.home-shirt-content-text {
   width: 500px;
-  top: -100px;
-  left: -300px;
   position: absolute;
+  text-align: center;
+  right: -150px;
+  top: -90px;
+}
+
+.home-shirt-content-text h1 {
+  font-size: 64px;
+}
+
+.home-shirt-content-text p {
+  font-size: 24px;
+}
+
+.home-shirt-img {
+  width: 450px;
+  top: -100px;
+  left: -260px;
+  position: absolute;
+}
+
+.home-shirt-item-img {
+  width: 400px;
+  height: 360px;
+  background-color: rgb(255, 231, 220);
+  position: absolute;
+  right: -100px;
+  bottom: -60px;
 }
