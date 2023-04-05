@@ -1,5 +1,6 @@
 import "../style/homeshirt.css";
-import shirtImg from "../images/home/luis-quintero-3qqiMT2LdR8-unsplash.jpg";
+import shirtImg from "../images/home/ivana-cajina-_7LbC5J-jw4-unsplash.jpg";
+import shirtItemImg from "../images/clothes/Isolated_black_t-shirt_front.png";
 
 export default function HomeShirt() {
   return (
@@ -7,11 +8,18 @@ export default function HomeShirt() {
       <div className="home-shirt-content">
         <img
           src={shirtImg}
-          alt="Tshirt showcase"
+          alt="Tshirt showcase img"
           className="home-shirt-img"
         ></img>
-        <h1>Check this out!</h1>
-        <p>Our amazing black T-shirt is going to make your days better!</p>
+        <div className="home-shirt-content-text">
+          <h1>Check this out!</h1>
+          <p>Our amazing black T-shirt is going to make your days better!</p>
+        </div>
+        <img
+          src={shirtItemImg}
+          alt="Tshirt item img"
+          className="home-shirt-item-img"
+        ></img>
       </div>
     </div>
   );
