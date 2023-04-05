@@ -3,7 +3,7 @@ import saleImg from "../images/home/arnel-hasanovic-Nl-SXO4FAHw-unsplash.jpg";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function HomeSale() {
+export default function HomeFav() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
