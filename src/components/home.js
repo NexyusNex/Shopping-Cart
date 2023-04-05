@@ -17,7 +17,7 @@ export default function Home() {
           ultricies rutrum. Sed pretium velit ac metus placerat lacinia. In at
           laoreet ex, sed faucibus ipsum.
         </p>
-        <Link to="/shop">
+        <Link to="/shop/men">
           <button>Shop now!</button>
         </Link>
       </div>
