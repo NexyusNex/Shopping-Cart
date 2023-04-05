@@ -33,3 +33,29 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media screen and (width<=880px) {
+  .home-sale-text h1 {
+    font-size: 48px;
+  }
+
+  .home-sale-text p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (width<=650px) {
+  .home-sale-text {
+    text-align: center;
+    width: 250px;
+    word-spacing: 2px;
+    line-height: 26px;
+  }
+  .home-sale-text h1 {
+    font-size: 32px;
+  }
+
+  .home-sale-text p {
+    font-size: 18px;
+  }
+}
