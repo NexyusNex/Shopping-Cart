@@ -25,6 +25,7 @@
   background-size: cover;
   transform: scale(1);
   transition: transform 800ms ease-out;
+  background-image: url(../images/home/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
   background-color: gray;
   background-blend-mode: multiply;
 }
@@ -52,8 +53,7 @@
   font-size: 1.2rem;
   border-radius: 8px;
   border: none;
-  transition: box-shadow 200ms ease;
-  transition: transform 300ms ease-in-out;
+  transition: 200ms ease;
 }
 
 .content button:hover {
@@ -67,6 +67,10 @@
 }
 
 @media screen and (width <=600px) {
+  .home-background {
+    background-image: url(../images/home/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+  }
+
   .content {
     width: 300px;
     right: 0;
