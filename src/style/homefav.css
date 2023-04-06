@@ -23,7 +23,7 @@
   text-shadow: 0px 0px 8px black;
 }
 
-.hs-hidden {
+.hf-hidden {
   opacity: 0;
   transform: translateY(100%) scaleY(200%);
   transition: all 1s;
@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.hs-show {
+.hf-show {
   opacity: 1;
   transform: translateY(0);
 }

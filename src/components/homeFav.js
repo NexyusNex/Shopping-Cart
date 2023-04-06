@@ -8,17 +8,17 @@ export default function HomeFav() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("hs-show");
+          entry.target.classList.add("hf-show");
         }
       });
     });
-    const hidden = document.querySelectorAll(".hs-hidden");
+    const hidden = document.querySelectorAll(".hf-hidden");
     hidden.forEach((el) => observer.observe(el));
   }, []);
 
   return (
     <div className="home-sale" style={{ backgroundImage: `url(${saleImg})` }}>
-      <div className="home-sale-text hs-hidden">
+      <div className="home-sale-text hf-hidden">
         <h1>Fashion Trends</h1>
         <p>
           We curate our selection to spark your creativity and individuality.
