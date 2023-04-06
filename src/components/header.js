@@ -27,7 +27,8 @@ export default function Header(props) {
             {props.cart.reduce((total, item) => {
               total = total + item.count;
               if (total >= 1000) {
-                return "1k+";
+                const number = String(total).charAt(0);
+                return number + "k+";
               }
               return total;
             }, 0)}
