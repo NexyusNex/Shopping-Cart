@@ -1,3 +1,25 @@
+@keyframes leftRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px) rotate(-45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes rightRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(300px) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
 .home-shirt {
   height: 100svh;
   padding: 200px 0;
@@ -60,6 +82,37 @@
 .home-shirt-button:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.hs-hidden.home-shirt-img {
+  opacity: 0;
+}
+
+.hs-show.home-shirt-img {
+  animation-name: leftRotate;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.hs-hidden.home-shirt-item-img {
+  opacity: 0;
+}
+
+.hs-show.home-shirt-item-img {
+  animation-name: rightRotate;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.hs-hidden.home-shirt-content-text {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.hs-show.home-shirt-content-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media screen and (width<=1200px) {
