@@ -24,10 +24,13 @@ export default function Header(props) {
           </Link>
 
           <div className="item-num">
-            {props.cart.reduce(
-              (total, item) => (total = total + item.count),
-              0
-            )}
+            {props.cart.reduce((total, item) => {
+              total = total + item.count;
+              if (total >= 1000) {
+                return "1k+";
+              }
+              return total;
+            }, 0)}
           </div>
         </div>
       </div>
