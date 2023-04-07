@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .home-shirt-content {
@@ -156,7 +157,7 @@
   }
 }
 
-@media screen and (width<=760px) {
+@media screen and (width<=800px) {
   .home-shirt-img {
     width: 300px;
     height: 370px;
