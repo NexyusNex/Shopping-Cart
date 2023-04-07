@@ -34,6 +34,7 @@
   background-color: white;
   border-radius: 14px;
   transition: all 400ms;
+  border: none;
 }
 
 .banner-item p {
@@ -45,7 +46,9 @@
   aspect-ratio: 1/1;
 }
 
-.banner-item:hover {
+.banner-item:hover,
+.banner-item:focus {
+  outline: none;
   cursor: pointer;
   box-shadow: 15px 25px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-20px);
