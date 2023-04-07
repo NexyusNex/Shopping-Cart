@@ -33,7 +33,7 @@
   height: auto;
   background-color: white;
   border-radius: 14px;
-  z-index: 2;
+  transition: all 400ms;
 }
 
 .banner-item p {
@@ -43,6 +43,12 @@
 .banner-item img {
   width: 100%;
   aspect-ratio: 1/1;
+}
+
+.banner-item:hover {
+  cursor: pointer;
+  box-shadow: 15px 25px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
 }
 
 .banner-end {
