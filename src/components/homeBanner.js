@@ -10,12 +10,18 @@ export default function HomeBanner() {
       <div className="banner-container">
         <div className="banner-item">
           <img src={catTshirt} alt="cat tshirt item"></img>
+          <h2>Cat T-Shirt</h2>
+          <p>$22.99</p>
         </div>
         <div className="banner-item">
           <img src={blueSkirt} alt="blue skirt item"></img>
+          <h2>Blue skirt</h2>
+          <p>$49.99</p>
         </div>
         <div className="banner-item">
           <img src={purpleDress} alt="purple dress item"></img>
+          <h2>Purple Dress</h2>
+          <p>$59.99</p>
         </div>
       </div>
     </div>
