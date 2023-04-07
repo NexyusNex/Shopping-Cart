@@ -66,6 +66,35 @@
 .banner-end h1 {
   font-size: clamp(48px, 82px, 100px);
 }
+
+.custom-shape-divider-top-1680897578 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1680897578 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 27px;
+}
+
+.custom-shape-divider-top-1680897578 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1680897578 svg {
+    width: calc(100% + 1.3px);
+    height: 21px;
+  }
+}
+
 .custom-shape-divider-bottom-1680893884 {
   position: absolute;
   bottom: 0;
