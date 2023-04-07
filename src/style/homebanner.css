@@ -30,7 +30,7 @@
 
 .banner-item img {
   width: 100%;
-  aspect-ratio: 1/1ges;
+  aspect-ratio: 1/1;
 }
 
 @media screen and (width<=800px) {
