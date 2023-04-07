@@ -11,16 +11,24 @@ export default function Header(props) {
       <div className="header-right">
         <ul>
           <Link to="/">
-            <li>Home</li>
+            <li>
+              <button>Home</button>
+            </li>
           </Link>
           <Link to="/shop/men/">
-            <li>Shop</li>
+            <li>
+              <button>Shop</button>
+            </li>
           </Link>
-          <li>About</li>
+          <li>
+            <button>About</button>
+          </li>
         </ul>
         <div className="cart">
           <Link to="/Payout">
-            <img src={shoppingCart} alt="shopping-cart"></img>
+            <button>
+              <img src={shoppingCart} alt="shopping-cart"></img>
+            </button>
           </Link>
 
           <div className="item-num">
