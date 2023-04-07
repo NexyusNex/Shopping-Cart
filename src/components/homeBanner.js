@@ -9,14 +9,14 @@ export default function HomeBanner() {
       <h1>We also have:</h1>
       <div className="banner-container">
         <div className="banner-item">
-          <img
-            src={catTshirt}
-            alt="cat tshirt item"
-            className="banner-img"
-          ></img>
+          <img src={catTshirt} alt="cat tshirt item"></img>
         </div>
-        <div className="banner-item">sdsd</div>
-        <div className="banner-item">sdsd</div>
+        <div className="banner-item">
+          <img src={blueSkirt} alt="blue skirt item"></img>
+        </div>
+        <div className="banner-item">
+          <img src={purpleDress} alt="purple dress item"></img>
+        </div>
       </div>
     </div>
   );
