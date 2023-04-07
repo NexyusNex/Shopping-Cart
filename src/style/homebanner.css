@@ -1,7 +1,12 @@
 .home-banner {
   box-sizing: border-box;
   height: auto;
-  background-color: rgb(241, 210, 255);
+  background: rgb(158, 115, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(158, 115, 180, 1) 20%,
+    rgba(241, 210, 255, 1) 82%
+  );
   display: flex;
   flex-direction: column;
   padding: 100px 10%;
@@ -30,6 +35,8 @@
   width: 100%;
   height: auto;
   background-color: white;
+  border-radius: 14px;
+  z-index: 2;
 }
 
 .banner-item p {
@@ -39,6 +46,17 @@
 .banner-item img {
   width: 100%;
   aspect-ratio: 1/1;
+}
+
+.deco-square {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(139, 92, 161);
+  z-index: 1;
+  transform: rotate(30deg);
+  bottom: 0px;
+  right: 40px;
 }
 
 @media screen and (width<=1200px) {
