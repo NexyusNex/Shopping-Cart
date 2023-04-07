@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 0 10%;
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 220px;
   text-align: center;
   position: relative;
 }
@@ -17,6 +17,10 @@
   left: 0;
   right: 0;
   font-size: 64px;
+}
+
+.home-banner h2 {
+  font-size: 26px;
 }
 
 .banner-container {
@@ -53,17 +57,14 @@
   transform: translateY(-20px);
 }
 
-.banner-end {
-  height: 40svh;
-  background-color: rgb(187, 149, 204);
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  color: white;
+.hb-hidden {
+  opacity: 0;
+  transform: scale(0.5);
 }
 
-.banner-end h1 {
-  font-size: clamp(48px, 82px, 100px);
+.hb-show {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .custom-shape-divider-top-1680897578 {
