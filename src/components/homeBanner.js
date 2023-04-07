@@ -3,8 +3,23 @@ import catTshirt from "../images/clothes/neko-front-shirt.png";
 import blueSkirt from "../images/clothes/blue-skirt.png";
 import purpleDress from "../images/clothes/purple-female-dress.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function HomeBanner() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("hb-show");
+        } else {
+          entry.target.classList.remove("hb-show");
+        }
+      });
+    });
+    const hidden = document.querySelectorAll(".hb-hidden");
+    hidden.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <div className="home-banner">
       <div class="custom-shape-divider-top-1680897578">
@@ -26,7 +41,7 @@ export default function HomeBanner() {
           to="/shop/men/4"
           style={{ textDecoration: "none", color: "black" }}
         >
-          <button className="banner-item">
+          <button className="banner-item hb-hidden">
             <img src={catTshirt} alt="cat tshirt item"></img>
             <h2>Cat T-Shirt</h2>
             <p>$22.99</p>
@@ -36,7 +51,7 @@ export default function HomeBanner() {
           to="/shop/women/12"
           style={{ textDecoration: "none", color: "black" }}
         >
-          <button className="banner-item">
+          <button className="banner-item hb-hidden">
             <img src={blueSkirt} alt="blue skirt item"></img>
             <h2>Blue skirt</h2>
             <p>$49.99</p>
@@ -46,7 +61,7 @@ export default function HomeBanner() {
           to="/shop/women/5"
           style={{ textDecoration: "none", color: "black" }}
         >
-          <button className="banner-item">
+          <button className="banner-item hb-hidden">
             <img src={purpleDress} alt="purple dress item"></img>
             <h2>Purple Dress</h2>
             <p>$59.99</p>
