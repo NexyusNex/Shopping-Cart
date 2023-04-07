@@ -1,15 +1,19 @@
 .home-banner {
   box-sizing: border-box;
   height: auto;
-  background-color: gray;
+  background-color: rgb(241, 210, 255);
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
-  padding-bottom: 200px;
+  padding: 100px 10%;
   text-align: center;
+  position: relative;
 }
 
 .home-banner h1 {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
   font-size: 64px;
 }
 
@@ -28,13 +32,37 @@
   background-color: white;
 }
 
+.banner-item p {
+  font-size: 24px;
+}
+
 .banner-item img {
   width: 100%;
   aspect-ratio: 1/1;
 }
 
+@media screen and (width<=1200px) {
+  .home-banner h1 {
+    font-size: 48px;
+    top: -65px;
+  }
+
+  .banner-item p {
+    font-size: 20px;
+  }
+}
+
 @media screen and (width<=800px) {
   .banner-container {
     grid-template-columns: repeat(1, minmax(200px, 300px));
+    gap: 48px;
+  }
+
+  .home-banner {
+    margin-bottom: 0;
+  }
+
+  .banner-item p {
+    font-size: 18px;
   }
 }
