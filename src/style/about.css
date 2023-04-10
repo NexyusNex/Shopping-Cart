@@ -1,0 +1,13 @@
+.about {
+  box-sizing: border-box;
+}
+
+.about-container {
+  padding: 0 20%;
+}
+
+.about-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
