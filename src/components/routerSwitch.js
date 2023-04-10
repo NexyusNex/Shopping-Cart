@@ -4,6 +4,7 @@ import App from "../App";
 import Shop from "./shop";
 import Payout from "./payout";
 import Pdp from "./pdp";
+import About from "./about";
 
 const RouteSwitch = () => {
   const [cart, setCart] = useState([]);
@@ -23,6 +24,10 @@ const RouteSwitch = () => {
           path="/Payout"
           element={<Payout cart={cart} setCart={setCart} />}
         />
+        <Route
+          path="/About"
+          element={<About cart={cart} setCart={setCart} />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
