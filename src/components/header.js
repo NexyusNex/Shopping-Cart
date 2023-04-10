@@ -20,9 +20,11 @@ export default function Header(props) {
               <button>Shop</button>
             </li>
           </Link>
-          <li>
-            <button>About</button>
-          </li>
+          <Link to="/about">
+            <li>
+              <button>About</button>
+            </li>
+          </Link>
         </ul>
         <div className="cart">
           <Link to="/Payout">
