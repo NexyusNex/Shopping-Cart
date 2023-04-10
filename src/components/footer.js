@@ -30,8 +30,8 @@ export default function Footer() {
         <h3>Our brands</h3>
         <div className="links">
           <p>Nike</p>
-          <p>Avans</p>
-          <p>Sequile</p>
+          <p>Louis Vuitton</p>
+          <p>Hermes</p>
         </div>
       </div>
     </div>
