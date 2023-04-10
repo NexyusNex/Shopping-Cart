@@ -25,7 +25,7 @@ const RouteSwitch = () => {
           element={<Payout cart={cart} setCart={setCart} />}
         />
         <Route
-          path="/About"
+          path="/about"
           element={<About cart={cart} setCart={setCart} />}
         ></Route>
       </Routes>
