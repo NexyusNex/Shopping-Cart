@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.0270b4a4.css",
-    "main.js": "/shopping-cart/static/js/main.29e79aa7.js",
+    "main.css": "/shopping-cart/static/css/main.c1389813.css",
+    "main.js": "/shopping-cart/static/js/main.b8f47c1c.js",
     "static/media/pink-sweater-front.png": "/shopping-cart/static/media/pink-sweater-front.47618c7f1c222f86fa2c.png",
     "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.0ef82c16b3cf8cd2ae7c.png",
     "static/media/black-front-sweater.jpg": "/shopping-cart/static/media/black-front-sweater.ebb32737eea45362f9f6.jpg",
@@ -10,9 +10,12 @@
     "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.4b1667f08247a1cebfd1.jpg",
     "static/media/Isolated_white_t-shirt_front.png": "/shopping-cart/static/media/Isolated_white_t-shirt_front.32813d6aeac175ff5727.png",
     "static/media/purple-female-dress.png": "/shopping-cart/static/media/purple-female-dress.e611c46ffac81c902939.png",
+    "static/media/christian-buehner-DItYlc26zVI-unsplash-modified.png": "/shopping-cart/static/media/christian-buehner-DItYlc26zVI-unsplash-modified.78bfc35940d46bdbce82.png",
     "static/media/man-underwear.png": "/shopping-cart/static/media/man-underwear.5dbe0a161b6db3d2e54a.png",
     "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash_sm.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash_sm.b11b9d36fa3e0326e9f0.jpg",
+    "static/media/edward-cisneros-_H6wpor9mjs-unsplash-modified.png": "/shopping-cart/static/media/edward-cisneros-_H6wpor9mjs-unsplash-modified.abc74ae7de626959ce7e.png",
     "static/media/Isolated_black_t-shirt_front.png": "/shopping-cart/static/media/Isolated_black_t-shirt_front.fe244943dea54eb3b1f6.png",
+    "static/media/joseph-gonzalez-iFgRcqHznqg-unsplash-modified.png": "/shopping-cart/static/media/joseph-gonzalez-iFgRcqHznqg-unsplash-modified.8d8ba26aed3d592d236c.png",
     "static/media/ivana-cajina-_7LbC5J-jw4-unsplash.jpg": "/shopping-cart/static/media/ivana-cajina-_7LbC5J-jw4-unsplash.64a44d29295ec526a239.jpg",
     "static/media/blue-female-dress.png": "/shopping-cart/static/media/blue-female-dress.0b08f7c2f98a4f029810.png",
     "static/media/blue-skirt.png": "/shopping-cart/static/media/blue-skirt.3b02838befe72b92cca9.png",
@@ -25,11 +28,12 @@
     "static/media/tyler-nix-Zhh3WM2ko3s-unsplash.jpg": "/shopping-cart/static/media/tyler-nix-Zhh3WM2ko3s-unsplash.5f5292b69e5f1ad1569d.jpg",
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
-    "main.0270b4a4.css.map": "/shopping-cart/static/css/main.0270b4a4.css.map",
-    "main.29e79aa7.js.map": "/shopping-cart/static/js/main.29e79aa7.js.map"
+    "static/media/star.svg": "/shopping-cart/static/media/star.de7ced177d66bb006694c870ba5271cd.svg",
+    "main.c1389813.css.map": "/shopping-cart/static/css/main.c1389813.css.map",
+    "main.b8f47c1c.js.map": "/shopping-cart/static/js/main.b8f47c1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0270b4a4.css",
-    "static/js/main.29e79aa7.js"
+    "static/css/main.c1389813.css",
+    "static/js/main.b8f47c1c.js"
   ]
 }
