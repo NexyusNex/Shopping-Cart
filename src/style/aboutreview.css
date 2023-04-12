@@ -1,0 +1,15 @@
+.about-review {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about-review-text {
+  display: flex;
+}
+
+h1 span {
+  padding: 6px 30px;
+  color: white;
+  background-color: #482358;
+  border-radius: 0 50px 0 50px;
+}
