@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.df9a7015.css",
-    "main.js": "/shopping-cart/static/js/main.00e7f3a5.js",
+    "main.css": "/shopping-cart/static/css/main.d3e8d6ba.css",
+    "main.js": "/shopping-cart/static/js/main.0a1d8d3d.js",
     "static/media/pink-sweater-front.png": "/shopping-cart/static/media/pink-sweater-front.47618c7f1c222f86fa2c.png",
     "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.0ef82c16b3cf8cd2ae7c.png",
     "static/media/black-front-sweater.jpg": "/shopping-cart/static/media/black-front-sweater.ebb32737eea45362f9f6.jpg",
+    "static/media/about-video-fashion.mp4": "/shopping-cart/static/media/about-video-fashion.29e12ee9ed5dd2762832.mp4",
     "static/media/arnel-hasanovic-Nl-SXO4FAHw-unsplash.jpg": "/shopping-cart/static/media/arnel-hasanovic-Nl-SXO4FAHw-unsplash.5d52a41b12083a91b4f6.jpg",
     "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg": "/shopping-cart/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.4b1667f08247a1cebfd1.jpg",
     "static/media/Isolated_white_t-shirt_front.png": "/shopping-cart/static/media/Isolated_white_t-shirt_front.32813d6aeac175ff5727.png",
@@ -24,11 +25,11 @@
     "static/media/tyler-nix-Zhh3WM2ko3s-unsplash.jpg": "/shopping-cart/static/media/tyler-nix-Zhh3WM2ko3s-unsplash.5f5292b69e5f1ad1569d.jpg",
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
-    "main.df9a7015.css.map": "/shopping-cart/static/css/main.df9a7015.css.map",
-    "main.00e7f3a5.js.map": "/shopping-cart/static/js/main.00e7f3a5.js.map"
+    "main.d3e8d6ba.css.map": "/shopping-cart/static/css/main.d3e8d6ba.css.map",
+    "main.0a1d8d3d.js.map": "/shopping-cart/static/js/main.0a1d8d3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.df9a7015.css",
-    "static/js/main.00e7f3a5.js"
+    "static/css/main.d3e8d6ba.css",
+    "static/js/main.0a1d8d3d.js"
   ]
 }
