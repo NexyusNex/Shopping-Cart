@@ -1,6 +1,7 @@
 import "../style/about.css";
 import Footer from "./footer";
 import Header from "./header";
+import aboutVideo from "../video/about-video-fashion.mp4";
 
 export default function About(props) {
   return (
@@ -16,6 +17,25 @@ export default function About(props) {
             costs cheap. Even if you dont follow fashion, you'll want to after
             you visit us.
           </p>
+        </div>
+        <div className="about-video">
+          <div className="about-video-text">
+            <h4>OUR PEOPLE</h4>
+            <h1>Creating a community for impact</h1>
+            <p>
+              Clothes shop has grown from 5 people in a shop to 5,000 across the
+              globe. With over 1,000,000 businesses powered by Clothes shop, we
+              care deeply about the work we do. We're constant learners who
+              thrive on change and seek to have an impact on everything we do.
+            </p>
+          </div>
+          <video
+            disablePictureInPicture
+            loop="true"
+            autoplay="autoplay"
+            muted
+            src={aboutVideo}
+          ></video>
         </div>
       </div>
       <Footer></Footer>
