@@ -1,3 +1,14 @@
+.ar-hidden {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 400ms;
+}
+
+.ar-show {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .about-review {
   text-align: center;
   margin-top: 100px;
@@ -5,8 +16,6 @@
 
 .about-review-title {
   margin-bottom: 40px;
-  animation-name: onLoad;
-  animation-duration: 1s;
 }
 
 h1 span {
@@ -34,8 +43,6 @@ h1 span {
   flex-direction: column;
   align-items: center;
   line-height: 24px;
-  animation-name: onLoad;
-  animation-duration: 1s;
 }
 
 .review p {

@@ -3,17 +3,32 @@ import face1 from "../images/review/christian-buehner-DItYlc26zVI-unsplash-modif
 import face2 from "../images/review/edward-cisneros-_H6wpor9mjs-unsplash-modified.png";
 import face3 from "../images/review/joseph-gonzalez-iFgRcqHznqg-unsplash-modified.png";
 import starsvg from "../images/star.svg";
+import { useEffect } from "react";
 
 export default function AboutReview() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("ar-show");
+        } else {
+          entry.target.classList.remove("ar-show");
+        }
+      });
+    });
+    const hidden = document.querySelectorAll(".ar-hidden");
+    hidden.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <div className="about-review">
-      <div className="about-review-title">
+      <div className="about-review-title ar-hidden">
         <h1>
           Customer <span>review</span>
         </h1>
       </div>
       <div className="about-review-container">
-        <div className="review">
+        <div className="review ar-hidden">
           <img src={face1} alt="review face1"></img>
           <h3>Markus Robinson</h3>
           <div className="star-container">
@@ -30,7 +45,7 @@ export default function AboutReview() {
             tempus. Proin ut libero sapien. Praesent.
           </p>
         </div>
-        <div className="review">
+        <div className="review ar-hidden">
           <img src={face2} alt="review face2"></img>
           <h3>Maria Williams</h3>
           <div className="star-container">
@@ -46,7 +61,7 @@ export default function AboutReview() {
             ante ipsum primis in faucibus. Vivamus.
           </p>
         </div>
-        <div className="review">
+        <div className="review ar-hidden">
           <img src={face3} alt="review face3"></img>
           <h3>John Brown</h3>
           <div className="star-container">
