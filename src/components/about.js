@@ -2,6 +2,7 @@ import "../style/about.css";
 import Footer from "./footer";
 import Header from "./header";
 import aboutVideo from "../video/about-video-fashion.mp4";
+import AboutReview from "./aboutReview";
 
 export default function About(props) {
   return (
@@ -37,6 +38,7 @@ export default function About(props) {
             src={aboutVideo}
           ></video>
         </div>
+        <AboutReview></AboutReview>
       </div>
       <Footer></Footer>
     </div>
