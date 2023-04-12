@@ -31,8 +31,8 @@ export default function About(props) {
           </div>
           <video
             disablePictureInPicture
-            loop="true"
-            autoplay="autoplay"
+            loop
+            autoPlay
             muted
             src={aboutVideo}
           ></video>
