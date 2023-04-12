@@ -2,12 +2,22 @@
   box-sizing: border-box;
 }
 
-.about-container {
+.about-introduction {
+  text-align: center;
+  margin: 50px 0;
   padding: 0 20%;
 }
 
-.about-introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about-introduction h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.about-introduction h4 {
+  letter-spacing: 4px;
+}
+
+.about-introduction p {
+  color: rgb(75, 75, 75);
+  font-size: 24px;
 }
