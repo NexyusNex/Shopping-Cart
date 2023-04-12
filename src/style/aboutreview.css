@@ -5,6 +5,8 @@
 
 .about-review-title {
   margin-bottom: 40px;
+  animation-name: onLoad;
+  animation-duration: 1s;
 }
 
 h1 span {
@@ -32,6 +34,8 @@ h1 span {
   flex-direction: column;
   align-items: center;
   line-height: 24px;
+  animation-name: onLoad;
+  animation-duration: 1s;
 }
 
 .review p {
