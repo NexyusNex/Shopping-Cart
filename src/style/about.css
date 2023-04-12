@@ -24,8 +24,39 @@
 
 .about-video {
   position: relative;
-  height: 65svh;
+  height: 75svh;
   background-color: rgb(241, 210, 255);
   margin-left: 15%;
   margin-right: 30%;
+}
+
+.about-video video {
+  height: 70%;
+  position: absolute;
+  right: -200px;
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.about-video h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.about-video h4 {
+  letter-spacing: 4px;
+}
+
+.about-video p {
+  color: rgb(75, 75, 75);
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.about-video-text {
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 100px;
 }
