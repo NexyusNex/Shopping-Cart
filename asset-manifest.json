@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.0bd00835.css",
+    "main.css": "/shopping-cart/static/css/main.0270b4a4.css",
     "main.js": "/shopping-cart/static/js/main.29e79aa7.js",
     "static/media/pink-sweater-front.png": "/shopping-cart/static/media/pink-sweater-front.47618c7f1c222f86fa2c.png",
     "static/media/neko-front-shirt.png": "/shopping-cart/static/media/neko-front-shirt.0ef82c16b3cf8cd2ae7c.png",
@@ -25,11 +25,11 @@
     "static/media/tyler-nix-Zhh3WM2ko3s-unsplash.jpg": "/shopping-cart/static/media/tyler-nix-Zhh3WM2ko3s-unsplash.5f5292b69e5f1ad1569d.jpg",
     "index.html": "/shopping-cart/index.html",
     "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.ea0823e018d26ac6f618cd841e7e9ec8.svg",
-    "main.0bd00835.css.map": "/shopping-cart/static/css/main.0bd00835.css.map",
+    "main.0270b4a4.css.map": "/shopping-cart/static/css/main.0270b4a4.css.map",
     "main.29e79aa7.js.map": "/shopping-cart/static/js/main.29e79aa7.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd00835.css",
+    "static/css/main.0270b4a4.css",
     "static/js/main.29e79aa7.js"
   ]
 }
