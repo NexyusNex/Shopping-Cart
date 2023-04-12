@@ -24,20 +24,22 @@
 
 .about-video {
   position: relative;
-  height: 75svh;
+  height: auto;
+  padding-bottom: 100px;
   background-color: rgb(241, 210, 255);
   margin-left: 15%;
   margin-right: 30%;
 }
 
 .about-video video {
-  height: 70%;
+  height: 500px;
   position: absolute;
   right: -200px;
   bottom: 0;
   top: 0;
   margin-top: auto;
-  margin-bottom: 50px;
+  margin-bottom: auto;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 }
 
 .about-video h1 {
@@ -59,4 +61,106 @@
   width: 50%;
   padding-left: 100px;
   padding-top: 100px;
+}
+
+@media screen and (width<=1650px) {
+  .about-video video {
+    right: -250px;
+  }
+}
+
+@media screen and (width<=1350px) {
+  .about-video video {
+    height: 450px;
+  }
+}
+
+@media screen and (width<=1250px) {
+  .about-video h1,
+  .about-introduction h1 {
+    font-size: 42px;
+  }
+
+  .about-video p {
+    line-height: 30px;
+  }
+
+  .about-introduction {
+    padding: 0 10%;
+  }
+
+  .about-introduction p,
+  .about-video p {
+    font-size: 20px;
+  }
+
+  .about-video video {
+    height: 400px;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .about-video {
+    margin: 0 15%;
+    padding-bottom: 200px;
+    margin-bottom: 250px;
+  }
+  .about-video-text {
+    width: auto;
+    padding: 0 10%;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-video h1,
+  .about-introduction h1 {
+    font-size: 32px;
+  }
+  .about-video p {
+    line-height: 26px;
+  }
+
+  .about-video p,
+  .about-introduction p {
+    font-size: 18px;
+  }
+
+  .about-video video {
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    transform: translateY(50%);
+    height: 350px;
+  }
+}
+
+@media screen and (width <= 850px) {
+  .about-video {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (width <= 600px) {
+  .about-video {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 150px;
+  }
+  .about-video video {
+    height: 300px;
+  }
+}
+
+@media screen and (width <= 500px) {
+  .about-video video {
+    height: 250px;
+  }
 }
