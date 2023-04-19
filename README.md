@@ -2,6 +2,8 @@
 
 # Shopping website
 
+![App Screenshot](https://github.com/NexyusNex/shopping-cart/blob/main/screenshot.png?raw=true)
+
 A fashion shopping website using firebase as a backend for products. Features a shop page with categories, product display page for all items, a cart with count and delete functions and more.
 
 
